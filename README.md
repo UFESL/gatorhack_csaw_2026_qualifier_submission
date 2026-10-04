@@ -1,10 +1,15 @@
 # Hack3D 2026: 3D Part Reconstruction
 
 **Prepared:** October 4, 2026
+
 **Challenge:** Red Team Vs Blue Team – .PLY Me a Secret
+
 **Team:** GatorHack
+
 **Team Members:** Dumindu Bandara, Dakshina Tharindu, Sahan Sanjaya, Hari Parvatham
+
 **Source Code:** https://github.com/UFESL/gatorhack_csaw_2026_qualifier_submission
+
 
 ## Overview
 
@@ -43,11 +48,7 @@ This repository contains our reconstruction submission for the three scanned par
 |---|---|---|
 | Boat | `Boat_reconstructed.*` (STL, PLY, OpenSCAD) | Final model |
 | Tower | `Tower_revised.*` (STL, PLY, OpenSCAD) | Final model, new loft defined by `CAD/revised_parameters.json` and `Measurements/Tower_revised_sections.csv` |
-| Tower | `Tower_measured_profile.*` | Axisymmetric median-flare comparison |
-| Tower | `Tower_reconstructed.*` | Ideal cylinder comparison |
 | Box | `Box_revised.*` (STL, PLY, OpenSCAD) | Final model, new surfaces defined by `CAD/revised_parameters.json` |
-| Box | `Box_reconstructed.*` | Earlier flat-floor comparison |
-
 ## Notes and Assumptions
 
 - All model coordinates are interpreted as millimetres under the shared-scan-unit assumption supported by Boat. STL has no embedded unit field: select mm on import.
