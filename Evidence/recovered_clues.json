@@ -1,0 +1,69 @@
+{
+  "source_files": {
+    "Boat": [
+      {
+        "line": 13,
+        "element": "vertex",
+        "index": 3,
+        "text": "-3.95982 14.321 389.808  - PLA",
+        "suffix": "- PLA"
+      },
+      {
+        "line": 23,
+        "element": "vertex",
+        "index": 13,
+        "text": "-2.14548 14.3343 390.157 - https://www.3dbenchy.com/",
+        "suffix": "- https://www.3dbenchy.com/"
+      }
+    ],
+    "Tower": [
+      {
+        "line": 19,
+        "element": "vertex",
+        "index": 9,
+        "text": "-3.44592 38.7815 391.437  - https://doi.org/10.1016/j.compositesa.2025.109248 - Phi = 40%",
+        "suffix": "- https://doi.org/10.1016/j.compositesa.2025.109248 - Phi = 40%"
+      }
+    ],
+    "Box": [
+      {
+        "line": 12,
+        "text": "end_header - https://drive.google.com/drive/folders/1GBNstjhu-mba_AvmHhLZc9MK_f_Nt7FC?usp=sharing"
+      }
+    ]
+  },
+  "drive_folder": "https://drive.google.com/drive/folders/1GBNstjhu-mba_AvmHhLZc9MK_f_Nt7FC?usp=sharing",
+  "public_file_ids": {
+    "Password.txt": "1XYJIy7iUexTy1pYPGV2WKHRTqWgiJBcm",
+    "Secret Company Files.zip": "1PGAn3Lt5VQovrAWoDoqs4TYb11KO0eXT"
+  },
+  "hint": "What is the name of the conference hosted by the CCS department that this challenge is a part of?",
+  "accepted_hint_answer": "CSAW26",
+  "reference_document": {
+    "filename": "Secret Company Files/main.pdf",
+    "sha256": "d1d4938858d7907def71a3aa58dd5769410cf6ae496cc8655d2f1d77c29a5c5c",
+    "doi": "10.1016/j.matdes.2015.12.052",
+    "matching_geometry": "Figure 12, item 4, page 8 (journal page 421)"
+  },
+  "benchy_reference_url": "https://raw.githubusercontent.com/CreativeTools/3DBenchy/master/Single-part/3DBenchy.stl",
+  "benchy_reference_sha256": "6ab57f1c3f8e86bc3cbd302c6fa6270acf06277c6335454e922419c25d42e97e",
+  "surface_markings": {
+    "Boat": {
+      "surface": "underside",
+      "text": "CT3D.xyz",
+      "evidence_image": "surface_markings.png",
+      "reference_match": "Same lettering in the original Creative Tools 3DBenchy STL",
+      "meaning": "Original model branding and shallow first-layer calibration lettering"
+    },
+    "Box": {
+      "surface": "outer bottom",
+      "text": "30%",
+      "evidence_image": "Box_surface_marking.png",
+      "encoding": "Source PLY vertex RGB channels; visible surface annotation",
+      "nominal_cenosphere_weight_percent": 30,
+      "nominal_hdpe_weight_percent": 70,
+      "basis": "Weight-fraction interpretation inferred from main.pdf section 3.1 pilot study, HDPE30",
+      "limitations": "The marking gives no fraction basis by itself; wt.% is inferred from the linked paper, not a chemical assay."
+    }
+  }
+}

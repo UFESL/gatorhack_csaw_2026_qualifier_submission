@@ -1,0 +1,92 @@
+{
+  "Boat": {
+    "vertices": 112569,
+    "faces": 225154,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "watertight": true,
+    "consistent_winding": true,
+    "positive_volume": true,
+    "volume_mm3": 15550.531015102759,
+    "surface_area_mm2": 9431.089101581792,
+    "bounds_mm": [
+      [
+        -29.176000595092773,
+        -15.501999855041504,
+        0.0
+      ],
+      [
+        30.825000762939453,
+        15.501999855041504,
+        48.0
+      ]
+    ],
+    "span_mm": [
+      60.00100135803223,
+      31.003999710083008,
+      48.0
+    ],
+    "export_roundtrip_passed": true
+  },
+  "Tower": {
+    "vertices": 386,
+    "faces": 768,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "watertight": true,
+    "consistent_winding": true,
+    "positive_volume": true,
+    "volume_mm3": 2976.618559711085,
+    "surface_area_mm2": 1198.0385833838875,
+    "bounds_mm": [
+      [
+        -6.25,
+        -6.25,
+        0.0
+      ],
+      [
+        6.25,
+        6.25,
+        24.26
+      ]
+    ],
+    "span_mm": [
+      12.5,
+      12.5,
+      24.26
+    ],
+    "export_roundtrip_passed": true
+  },
+  "Box": {
+    "vertices": 5529,
+    "faces": 11070,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "watertight": true,
+    "consistent_winding": true,
+    "positive_volume": true,
+    "volume_mm3": 23720.9652548088,
+    "surface_area_mm2": 23892.21510130188,
+    "bounds_mm": [
+      [
+        -49.657142639160156,
+        -49.627403259277344,
+        -2.4938056468963623
+      ],
+      [
+        48.46736145019531,
+        40.57258224487305,
+        30.65734100341797
+      ]
+    ],
+    "span_mm": [
+      98.12450408935547,
+      90.19998550415039,
+      33.15114665031433
+    ],
+    "export_roundtrip_passed": true
+  }
+}

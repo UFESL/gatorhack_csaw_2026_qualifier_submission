@@ -1,0 +1,471 @@
+{
+  "Boat": {
+    "vertices": 141827,
+    "faces": 280629,
+    "min": [
+      -32.0124,
+      13.1755,
+      378.418
+    ],
+    "max": [
+      27.2191,
+      62.6421,
+      417.698
+    ],
+    "span": [
+      59.2315,
+      49.4666,
+      39.27999999999997
+    ],
+    "pca_span": [
+      61.392480905418395,
+      51.76132206644935,
+      31.648434342778252
+    ],
+    "pca_basis": [
+      [
+        -0.7713266240825112,
+        0.46359693730042595,
+        -0.4360425652469512
+      ],
+      [
+        0.564199916196529,
+        0.815114306619191,
+        -0.13140442043000222
+      ],
+      [
+        -0.2945058463686353,
+        0.34737090677024207,
+        0.8902807195398055
+      ]
+    ],
+    "connected_components": 4,
+    "largest_components": [
+      {
+        "label": 0,
+        "vertices": 139679,
+        "faces": 276517,
+        "min": [
+          -32.0124,
+          13.1755,
+          378.418
+        ],
+        "max": [
+          27.2191,
+          62.6421,
+          417.698
+        ]
+      },
+      {
+        "label": 3,
+        "vertices": 1810,
+        "faces": 3444,
+        "min": [
+          13.4957,
+          40.3238,
+          400.282
+        ],
+        "max": [
+          23.8434,
+          44.564,
+          413.916
+        ]
+      },
+      {
+        "label": 2,
+        "vertices": 179,
+        "faces": 354,
+        "min": [
+          -6.29448,
+          50.8768,
+          385.006
+        ],
+        "max": [
+          -2.20551,
+          51.5341,
+          386.184
+        ]
+      },
+      {
+        "label": 1,
+        "vertices": 159,
+        "faces": 314,
+        "min": [
+          -0.183271,
+          43.4106,
+          408.267
+        ],
+        "max": [
+          0.829404,
+          47.5865,
+          409.466
+        ]
+      }
+    ],
+    "boundary_edges": 3033,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "edge_length_percentiles": [
+      0.0007071067811861557,
+      0.22502976925251542,
+      0.38364965637932097,
+      0.5491993561493165,
+      1.4187535585858395
+    ],
+    "surface_area": 5630.642863959464,
+    "signed_volume": 58548.91003612455,
+    "sha256": "8f67f257b98d9517635c0b36f70f5a7436ef577a687e0c93818a02e276070495",
+    "bytes": 9656201,
+    "annotations": [
+      {
+        "line": 13,
+        "element": "vertex",
+        "index": 3,
+        "text": "-3.95982 14.321 389.808  - PLA",
+        "suffix": "- PLA"
+      },
+      {
+        "line": 23,
+        "element": "vertex",
+        "index": 13,
+        "text": "-2.14548 14.3343 390.157 - https://www.3dbenchy.com/",
+        "suffix": "- https://www.3dbenchy.com/"
+      }
+    ],
+    "header": [
+      "ply",
+      "format ascii 1.0",
+      "element vertex 141827",
+      "property float x",
+      "property float y",
+      "property float z",
+      "element face 280629",
+      "property list uchar int vertex_indices",
+      "end_header"
+    ]
+  },
+  "Tower": {
+    "vertices": 30118,
+    "faces": 59872,
+    "min": [
+      -14.9501,
+      36.4938,
+      389.616
+    ],
+    "max": [
+      -1.15845,
+      62.2357,
+      405.501
+    ],
+    "span": [
+      13.79165,
+      25.7419,
+      15.884999999999991
+    ],
+    "pca_span": [
+      24.783972053849467,
+      13.12810906523335,
+      13.084307378067427
+    ],
+    "pca_basis": [
+      [
+        0.03806570699079075,
+        -0.760731299690627,
+        -0.6479497601066772
+      ],
+      [
+        -0.9919097250123963,
+        -0.10734814087308085,
+        0.0677604167410836
+      ],
+      [
+        -0.12110367202163363,
+        0.6401283202000224,
+        -0.7586630571609334
+      ]
+    ],
+    "connected_components": 1,
+    "largest_components": [
+      {
+        "label": 0,
+        "vertices": 30118,
+        "faces": 59872,
+        "min": [
+          -14.9501,
+          36.4938,
+          389.616
+        ],
+        "max": [
+          -1.15845,
+          62.2357,
+          405.501
+        ]
+      }
+    ],
+    "boundary_edges": 368,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "edge_length_percentiles": [
+      0.0056789083458111235,
+      0.21026734184509316,
+      0.33361526765760124,
+      0.49382920219863335,
+      1.1694015606283388
+    ],
+    "surface_area": 1143.4814168575722,
+    "signed_volume": 3014.386221569941,
+    "sha256": "6310bbf02c2d29fa708b7c9cd6b64af5a600e86d5f9087828106263dd7507caa",
+    "bytes": 1964166,
+    "annotations": [
+      {
+        "line": 19,
+        "element": "vertex",
+        "index": 9,
+        "text": "-3.44592 38.7815 391.437  - https://doi.org/10.1016/j.compositesa.2025.109248 - Phi = 40%",
+        "suffix": "- https://doi.org/10.1016/j.compositesa.2025.109248 - Phi = 40%"
+      }
+    ],
+    "header": [
+      "ply",
+      "format ascii 1.0",
+      "element vertex 30118",
+      "property float x",
+      "property float y",
+      "property float z",
+      "element face 59872",
+      "property list uchar int vertex_indices",
+      "end_header"
+    ]
+  },
+  "Box": {
+    "vertices": 338375,
+    "faces": 666248,
+    "min": [
+      -59.4094,
+      -30.2699,
+      371.205
+    ],
+    "max": [
+      40.2291,
+      61.8034,
+      415.3
+    ],
+    "span": [
+      99.6385,
+      92.0733,
+      44.09500000000003
+    ],
+    "pca_span": [
+      91.8924232785894,
+      98.79117381181918,
+      30.733960208258193
+    ],
+    "pca_basis": [
+      [
+        -0.05794826311220894,
+        0.9838365562201217,
+        -0.16943325956614744
+      ],
+      [
+        -0.9875652247085045,
+        -0.08133681376961557,
+        -0.1345334518707102
+      ],
+      [
+        -0.1461400894645959,
+        0.159530415190139,
+        0.976316096804996
+      ]
+    ],
+    "connected_components": 25,
+    "largest_components": [
+      {
+        "label": 1,
+        "vertices": 243845,
+        "faces": 481330,
+        "min": [
+          -59.4094,
+          -30.2699,
+          372.589
+        ],
+        "max": [
+          40.2291,
+          61.8034,
+          415.3
+        ]
+      },
+      {
+        "label": 2,
+        "vertices": 43611,
+        "faces": 86351,
+        "min": [
+          -33.474,
+          -13.2971,
+          397.363
+        ],
+        "max": [
+          11.3355,
+          41.2347,
+          411.403
+        ]
+      },
+      {
+        "label": 3,
+        "vertices": 17625,
+        "faces": 34315,
+        "min": [
+          -24.1221,
+          -15.2867,
+          373.773
+        ],
+        "max": [
+          20.7667,
+          29.0945,
+          398.875
+        ]
+      },
+      {
+        "label": 22,
+        "vertices": 17484,
+        "faces": 34259,
+        "min": [
+          -34.4809,
+          -2.70163,
+          373.381
+        ],
+        "max": [
+          10.3487,
+          40.0038,
+          398.571
+        ]
+      },
+      {
+        "label": 7,
+        "vertices": 3382,
+        "faces": 6518,
+        "min": [
+          23.7718,
+          6.01822,
+          391.297
+        ],
+        "max": [
+          40.0665,
+          17.2871,
+          396.502
+        ]
+      },
+      {
+        "label": 19,
+        "vertices": 3221,
+        "faces": 6197,
+        "min": [
+          -20.8375,
+          -28.2705,
+          381.513
+        ],
+        "max": [
+          -18.2119,
+          -15.3446,
+          392.881
+        ]
+      },
+      {
+        "label": 24,
+        "vertices": 2059,
+        "faces": 3973,
+        "min": [
+          3.5684,
+          22.8546,
+          385.806
+        ],
+        "max": [
+          11.6124,
+          30.3054,
+          395.522
+        ]
+      },
+      {
+        "label": 23,
+        "vertices": 1681,
+        "faces": 3241,
+        "min": [
+          -25.3362,
+          -5.46698,
+          376.009
+        ],
+        "max": [
+          -18.9796,
+          1.77269,
+          384.952
+        ]
+      },
+      {
+        "label": 20,
+        "vertices": 1130,
+        "faces": 2157,
+        "min": [
+          -19.748,
+          -28.7751,
+          394.218
+        ],
+        "max": [
+          -17.2602,
+          -17.7071,
+          398.603
+        ]
+      },
+      {
+        "label": 15,
+        "vertices": 1024,
+        "faces": 1925,
+        "min": [
+          -15.2262,
+          -25.7788,
+          377.575
+        ],
+        "max": [
+          -10.0809,
+          -15.4416,
+          381.066
+        ]
+      }
+    ],
+    "boundary_edges": 10466,
+    "nonmanifold_edges": 0,
+    "degenerate_faces": 0,
+    "duplicate_faces": 0,
+    "edge_length_percentiles": [
+      0.0023584952830051522,
+      0.21034306763000515,
+      0.3745200165000174,
+      0.5156410785904314,
+      1.370111609176421
+    ],
+    "surface_area": 12456.939667682287,
+    "signed_volume": 130485.24062192104,
+    "sha256": "de5a13f002b02b2d1c8909f29b1f709a009e46c668083ff6731b686089079c51",
+    "bytes": 27356581,
+    "annotations": [
+      {
+        "line": 12,
+        "text": "end_header - https://drive.google.com/drive/folders/1GBNstjhu-mba_AvmHhLZc9MK_f_Nt7FC?usp=sharing"
+      }
+    ],
+    "header": [
+      "ply",
+      "format ascii 1.0",
+      "element vertex 338375",
+      "property float x",
+      "property float y",
+      "property float z",
+      "property uchar red",
+      "property uchar green",
+      "property uchar blue",
+      "element face 666248",
+      "property list uchar int vertex_indices",
+      "end_header - https://drive.google.com/drive/folders/1GBNstjhu-mba_AvmHhLZc9MK_f_Nt7FC?usp=sharing"
+    ]
+  }
+}

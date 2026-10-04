@@ -1,0 +1,138 @@
+{
+  "Tower": {
+    "geometry": {
+      "vertices": 6842,
+      "faces": 13680,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "volume_mm3": 2979.8496236423853,
+      "surface_area_mm2": 1212.435141477345,
+      "bounds_mm": [
+        [
+          -6.444389404968481,
+          -6.442012504029371,
+          0.0
+        ],
+        [
+          6.663651359817071,
+          6.791173547308801,
+          24.26005165061907
+        ]
+      ],
+      "span_mm": [
+        13.108040764785553,
+        13.233186051338173,
+        24.26005165061907
+      ],
+      "single_material_component": true,
+      "stl_reimport_passed": true
+    },
+    "same_sample_comparison": {
+      "initial": {
+        "sample_points": 18000,
+        "rms_mm": 0.08179550662569089,
+        "median_mm": 0.039436803727045555,
+        "p95_mm": 0.16359081591221772,
+        "p99_mm": 0.31243551967040273,
+        "max_mm": 0.5636277228580733,
+        "within_0_5_mm_percent": 99.95,
+        "within_1_mm_percent": 100.0,
+        "feature_region_count": 1169,
+        "feature_region_rms_mm": 0.20881960394201662
+      },
+      "revised": {
+        "sample_points": 18000,
+        "rms_mm": 0.04254211936430333,
+        "median_mm": 0.012828502614300775,
+        "p95_mm": 0.08249831626289449,
+        "p99_mm": 0.18968859615881412,
+        "max_mm": 0.4312535628033724,
+        "within_0_5_mm_percent": 100.0,
+        "within_1_mm_percent": 100.0,
+        "feature_region_count": 1169,
+        "feature_region_rms_mm": 0.06317456658199722
+      },
+      "median_revolve": {
+        "sample_points": 18000,
+        "rms_mm": 0.0637234976077898,
+        "median_mm": 0.03473981916807309,
+        "p95_mm": 0.12395294626477645,
+        "p99_mm": 0.22210580939152383,
+        "max_mm": 0.45733064304425086,
+        "within_0_5_mm_percent": 100.0,
+        "within_1_mm_percent": 100.0,
+        "feature_region_count": 1169,
+        "feature_region_rms_mm": 0.1125521821805424
+      }
+    },
+    "rms_reduction_percent": 47.989662122905166,
+    "distance_basis": "Exact nearest triangles, same 18,000 original scan vertices per candidate, fixed seed 2026.",
+    "limitations": "One-way distances evaluate surviving scan agreement, not missing surfaces or original design intent."
+  },
+  "Box": {
+    "geometry": {
+      "vertices": 5592,
+      "faces": 11196,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "watertight": true,
+      "consistent_winding": true,
+      "positive_volume": true,
+      "volume_mm3": 23916.67241749883,
+      "surface_area_mm2": 23880.304607245977,
+      "bounds_mm": [
+        [
+          -49.657142639160156,
+          -49.627403259277344,
+          -2.4938056468963623
+        ],
+        [
+          48.46736145019531,
+          40.57258224487305,
+          30.647319793701172
+        ]
+      ],
+      "span_mm": [
+        98.12450408935547,
+        90.19998550415039,
+        33.141125440597534
+      ],
+      "single_material_component": true,
+      "stl_reimport_passed": true
+    },
+    "same_sample_comparison": {
+      "initial": {
+        "sample_points": 18000,
+        "rms_mm": 0.47716514563602275,
+        "median_mm": 0.168224741042384,
+        "p95_mm": 1.0370594315091832,
+        "p99_mm": 1.8853676889125575,
+        "max_mm": 3.1460255108533164,
+        "within_0_5_mm_percent": 82.33888888888889,
+        "within_1_mm_percent": 94.61111111111111,
+        "feature_region_count": 1634,
+        "feature_region_rms_mm": 0.9178115328836531
+      },
+      "revised": {
+        "sample_points": 18000,
+        "rms_mm": 0.35362979952304247,
+        "median_mm": 0.11796093469959631,
+        "p95_mm": 0.6468888869933178,
+        "p99_mm": 1.436273295736809,
+        "max_mm": 3.146025341275283,
+        "within_0_5_mm_percent": 89.86666666666666,
+        "within_1_mm_percent": 98.42222222222222,
+        "feature_region_count": 1634,
+        "feature_region_rms_mm": 0.11845893207859877
+      }
+    },
+    "rms_reduction_percent": 25.88943204313836,
+    "distance_basis": "Exact nearest triangles, same 18,000 original scan vertices per candidate, fixed seed 2026.",
+    "limitations": "One-way distances evaluate surviving scan agreement, not missing surfaces or original design intent."
+  }
+}

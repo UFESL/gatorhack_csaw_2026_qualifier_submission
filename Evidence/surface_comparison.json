@@ -1,0 +1,44 @@
+{
+  "Boat": {
+    "sampled_scan_vertices": 18000,
+    "exact_triangle_distance_percentiles_mm": [
+      0.05908976286186489,
+      0.16238269238375402,
+      0.20045298178379778,
+      0.30887311252673955,
+      1.868667363326908
+    ],
+    "all_sample_rms_mm": 0.10784280028839574,
+    "within_0_5_mm_percent": 99.80555555555556,
+    "within_1_0_mm_percent": 99.95,
+    "note": "One-way scan-to-model distances. Missing scan regions cannot validate reconstructed internal features."
+  },
+  "Tower": {
+    "sampled_scan_vertices": 18000,
+    "exact_triangle_distance_percentiles_mm": [
+      0.03966584062679496,
+      0.11878939505966792,
+      0.16258023695218893,
+      0.31164614750925723,
+      0.5636277228580733
+    ],
+    "all_sample_rms_mm": 0.0815655497005665,
+    "within_0_5_mm_percent": 99.93888888888888,
+    "within_1_0_mm_percent": 100.0,
+    "note": "One-way scan-to-model distances. Missing scan regions cannot validate reconstructed internal features."
+  },
+  "Box": {
+    "sampled_scan_vertices": 18000,
+    "exact_triangle_distance_percentiles_mm": [
+      0.1698855304300033,
+      0.7061427810473718,
+      1.0589973755801598,
+      1.9257202505045725,
+      3.0449118841234006
+    ],
+    "all_sample_rms_mm": 0.4814942203047295,
+    "within_0_5_mm_percent": 81.9388888888889,
+    "within_1_0_mm_percent": 94.37222222222222,
+    "note": "One-way scan-to-model distances. Missing scan regions cannot validate reconstructed internal features."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "Boat": {
+    "surface": "underside",
+    "text": "CT3D.xyz",
+    "evidence_image": "surface_markings.png",
+    "reference_match": "Same lettering in the original Creative Tools 3DBenchy STL",
+    "meaning": "Original model branding and shallow first-layer calibration lettering"
+  },
+  "Box": {
+    "surface": "outer bottom",
+    "text": "30%",
+    "evidence_image": "Box_surface_marking.png",
+    "encoding": "Source PLY vertex RGB channels; visible surface annotation",
+    "nominal_cenosphere_weight_percent": 30,
+    "nominal_hdpe_weight_percent": 70,
+    "basis": "Weight-fraction interpretation inferred from main.pdf section 3.1 pilot study, HDPE30",
+    "limitations": "The marking gives no fraction basis by itself; wt.% is inferred from the linked paper, not a chemical assay."
+  }
+}

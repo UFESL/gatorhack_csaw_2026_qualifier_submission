@@ -1,0 +1,86 @@
+[
+  {
+    "xy": [
+      -15.0,
+      0.0
+    ],
+    "surface_hits_z": [
+      0.0,
+      3.968731301860517
+    ],
+    "expected_floor_z": 3.9687307767598985,
+    "pass": true
+  },
+  {
+    "xy": [
+      -5.0,
+      0.0
+    ],
+    "surface_hits_z": [
+      0.0,
+      2.8017060651250674
+    ],
+    "expected_floor_z": 2.801705633712514,
+    "pass": true
+  },
+  {
+    "xy": [
+      0.0,
+      0.0
+    ],
+    "surface_hits_z": [
+      0.0,
+      2.2181934752351875
+    ],
+    "expected_floor_z": 2.2181930621888224,
+    "pass": true
+  },
+  {
+    "xy": [
+      10.0,
+      0.0
+    ],
+    "surface_hits_z": [
+      0.0,
+      1.0511683704147696
+    ],
+    "expected_floor_z": 1.0511679191414387,
+    "pass": true
+  },
+  {
+    "xy": [
+      20.0,
+      0.0
+    ],
+    "surface_hits_z": [
+      0.0,
+      1.0
+    ],
+    "expected_floor_z": 1.0,
+    "pass": true
+  },
+  {
+    "xy": [
+      0.0,
+      -12.0
+    ],
+    "surface_hits_z": [
+      0.0,
+      2.188508775508785
+    ],
+    "expected_floor_z": 2.188508418795057,
+    "pass": true
+  },
+  {
+    "xy": [
+      0.0,
+      12.0
+    ],
+    "surface_hits_z": [
+      0.0,
+      2.247878147665583
+    ],
+    "expected_floor_z": 2.247877705582588,
+    "pass": true
+  }
+]

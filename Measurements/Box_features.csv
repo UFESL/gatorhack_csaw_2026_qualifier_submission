@@ -1,0 +1,9 @@
+feature,value_mm,basis
+body_outside_diameter,59.52,fitted circular idealization
+chamber_inside_diameter,55.22,fitted circular idealization
+radial_wall_thickness,2.150000000000002,difference of CAD radii
+cad_bottom_thickness,2.59,median floor estimate used by existing CAD
+new_floor_consensus_center_height,2.2181930621888224,independent visible-surface plane fit; different from flat CAD floor
+rim_center_height,27.1,fitted slanted rim
+rim_min_height_on_cad_body,23.542658201971257,calculated from rim plane
+rim_max_height_on_cad_body,30.657341798028746,calculated from rim plane

@@ -1,0 +1,105 @@
+{
+  "source_faces": 225706,
+  "removed_degenerate_faces": 563,
+  "repaired_collinear_t_junctions": [
+    {
+      "boundary_vertices": 3,
+      "span": [
+        0.0,
+        0.08500003814697266,
+        0.0
+      ],
+      "perimeter": 0.1700000762939453
+    },
+    {
+      "boundary_vertices": 3,
+      "span": [
+        0.0,
+        0.25800037384033203,
+        0.0
+      ],
+      "perimeter": 0.5160007476806641
+    },
+    {
+      "boundary_vertices": 3,
+      "span": [
+        0.0,
+        0.13000011444091797,
+        0.0
+      ],
+      "perimeter": 0.26000022888183594
+    },
+    {
+      "boundary_vertices": 3,
+      "span": [
+        0.0,
+        1.6489996910095215,
+        0.0
+      ],
+      "perimeter": 3.297999382019043
+    },
+    {
+      "boundary_vertices": 4,
+      "span": [
+        0.0,
+        1.1549999713897705,
+        0.0
+      ],
+      "perimeter": 2.309999942779541
+    },
+    {
+      "boundary_vertices": 4,
+      "span": [
+        0.0,
+        1.1440000534057617,
+        0.0
+      ],
+      "perimeter": 2.2880001068115234
+    },
+    {
+      "boundary_vertices": 3,
+      "span": [
+        0.0,
+        0.6289999485015869,
+        0.0
+      ],
+      "perimeter": 1.2579998970031738
+    },
+    {
+      "boundary_vertices": 3,
+      "span": [
+        0.0,
+        0.13300013542175293,
+        0.0
+      ],
+      "perimeter": 0.26600027084350586
+    },
+    {
+      "boundary_vertices": 3,
+      "span": [
+        0.0,
+        0.09299993515014648,
+        0.0
+      ],
+      "perimeter": 0.18599987030029297
+    }
+  ],
+  "final_vertices": 112569,
+  "final_faces": 225154,
+  "watertight": true,
+  "winding_consistent": true,
+  "original_volume": 15550.53101510276,
+  "repaired_volume": 15550.531015102759,
+  "bounds": [
+    [
+      -29.176000595092773,
+      -15.501999855041504,
+      0.0
+    ],
+    [
+      30.825000762939453,
+      15.501999855041504,
+      48.0
+    ]
+  ]
+}

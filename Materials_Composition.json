@@ -1,0 +1,38 @@
+{
+  "Boat": {
+    "polymer": "PLA (polylactic acid)",
+    "composition_evidence": "Explicit suffix at Boat.ply line 13",
+    "additives_or_grade": "Not specified"
+  },
+  "Tower": {
+    "matrix": "Acrylate-based thermosetting photopolymer resin",
+    "matrix_volume_percent": 60,
+    "filler": "Hollow glass microspheres",
+    "filler_volume_percent": 40,
+    "evidence": "Tower.ply line 19: DOI 10.1016/j.compositesa.2025.109248; Phi = 40%",
+    "interpretation": "Nominal two-phase formulation inferred from the DOI and Phi clue; not a chemical analysis of the physical specimen.",
+    "paper_hgm_description": "Ecospheres; mean size 45 micrometres; true particle density 0.31 g/cm3 as described by the cited paper."
+  },
+  "Box": {
+    "matrix": "HDPE; grade HD50MA180 in the supplied paper",
+    "filler": "Fly-ash cenospheres; CIL-150 in the supplied paper",
+    "filler_chemistry": "Primarily silica/alumina ceramic shells, with calcium oxide and iron oxides",
+    "specific_filler_fraction": 0.3,
+    "fraction_basis": "Weight; inferred from the supplied paper, not stated in the surface label itself",
+    "filler_weight_percent": 30,
+    "matrix_weight_percent": 70,
+    "surface_marking": "30% on the outside-bottom face, visible in original PLY vertex RGB colors",
+    "evidence": "Box source surface marking; supplied archive main.pdf sections 2.1 and 3.1 (HDPE30 pilot formulation); matching junction geometry in Figure 12 item 4.",
+    "interpretation": "Nominal 30 wt.% fly-ash cenospheres and 70 wt.% HDPE inferred by combining the surface clue with the linked paper. Not a chemical assay of the physical specimen.",
+    "pilot_formulations_in_paper_wt_percent_cenospheres": [
+      30,
+      60
+    ],
+    "main_study_formulations_in_paper_wt_percent_cenospheres": [
+      20,
+      40,
+      60
+    ],
+    "limitations": "The label alone does not specify weight versus volume. Surface treatment, pigment, additives and measured physical composition remain unspecified."
+  }
+}

@@ -1,0 +1,8 @@
+numpy==1.23.1
+scipy==1.13.0
+matplotlib==3.6.0
+PyMuPDF==1.26.3
+trimesh==5.1.1
+manifold3d==3.5.4
+shapely==2.1.2
+rtree==1.4.1

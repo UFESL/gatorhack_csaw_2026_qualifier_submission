@@ -1,0 +1,2892 @@
+{
+  "units": "Scan coordinate units interpreted as millimetres under the shared-export-unit assumption",
+  "scale_basis": {
+    "reference": "Known 3DBenchy nominal 60 x 31 x 48 mm",
+    "boat_diagnostic_scale": 1.0004333667980814,
+    "applied_tower_box_scale_factor": 1.0,
+    "qualification": "No independent physical unit is encoded in Tower/Box PLY. Shared units with Boat are assumed."
+  },
+  "method": "Intersections with actual source triangles; equal-angle radius medians; robust local surface fits; explicit CAD completions.",
+  "scatter_note": "Percentile bands describe spatial scan variation, not manufacturing tolerances or statistical confidence intervals.",
+  "Tower": {
+    "coordinate_frame": {
+      "source_origin": [
+        -7.801383202127968,
+        37.33931482222102,
+        396.2369935257637
+      ],
+      "basis_columns": [
+        [
+          0.9994483780133555,
+          -8.673617379884035e-19,
+          -0.03321053577515316
+        ],
+        [
+          0.032929687081749086,
+          0.12977563089247549,
+          0.9909964285178621
+        ],
+        [
+          0.004309918232497629,
+          -0.9915433856500985,
+          0.12970404380114456
+        ]
+      ],
+      "row_vector_formula": "local = (source - origin) @ basis",
+      "inverse_formula": "source = local @ basis.T + origin",
+      "max_frame_reconstruction_error": 7.105427357601002e-15,
+      "source_vertex_bounds_local": [
+        [
+          -6.478462572537216,
+          -6.490233405358512,
+          -0.38020681346280344
+        ],
+        [
+          6.665161883522394,
+          6.776962951276726,
+          24.40419994818413
+        ]
+      ],
+      "source_vertex_span": [
+        13.14362445605961,
+        13.267196356635239,
+        24.78440676164693
+      ]
+    },
+    "baseline_diameter_mm": 12.495723460251144,
+    "fitted_cap_separation_mm": 24.26005165061907,
+    "flare": {
+      "peak_section_z_mm": 1.0,
+      "median_peak_diameter_about_fixed_axis_mm": 13.029466385637075,
+      "median_radial_projection_above_baseline_mm": 0.2668714626929658,
+      "peak_section_radius_p05_p95_mm": [
+        6.382789916935297,
+        6.706795044525499
+      ],
+      "sections_with_median_radial_excess_over_0_10_mm": [
+        0.75,
+        1.0,
+        1.25,
+        1.5
+      ],
+      "sampled_half_height_band_mm": [
+        0.75,
+        1.5
+      ],
+      "sampled_half_height_band_width_mm": 0.75,
+      "peak_covered_angles_with_radial_excess_over_0_10_mm_percent": 100.0,
+      "threshold_note": "Bands are sampled at 0.25 mm; boundaries are not interpolated. Incomplete lower edge limits the inferred full extent.",
+      "interpretation": "End flare is measured geometry; its origin as intentional design, print deformation, damage or scan distortion is unresolved."
+    },
+    "section_spacing_mm": 0.25,
+    "angular_bin_width_degrees": 5,
+    "sections": [
+      {
+        "z_mm": 0.25,
+        "section_points": 206,
+        "angular_coverage_percent": 66.66666666666666,
+        "circle_center_x_mm": 0.5373039703002771,
+        "circle_center_y_mm": 0.24243343915971427,
+        "fitted_circle_diameter_mm": 11.827852958736957,
+        "median_radius_from_fixed_axis_mm": 6.212136086200447,
+        "fixed_axis_radius_p05_mm": 5.353830356203558,
+        "fixed_axis_radius_p95_mm": 6.610677506751461,
+        "opposed_width_min_mm": 11.701487453916966,
+        "opposed_width_max_mm": 12.045729455364079,
+        "opposed_width_spread_mm": 0.34424200144711214,
+        "angular_radius_residual_p95_mm": 0.3184388426874017
+      },
+      {
+        "z_mm": 0.5,
+        "section_points": 249,
+        "angular_coverage_percent": 73.61111111111111,
+        "circle_center_x_mm": 0.14714069797045398,
+        "circle_center_y_mm": 0.19271440459102723,
+        "fitted_circle_diameter_mm": 12.73032915651965,
+        "median_radius_from_fixed_axis_mm": 6.286101875290386,
+        "fixed_axis_radius_p05_mm": 6.108487532229673,
+        "fixed_axis_radius_p95_mm": 6.695684251458649,
+        "opposed_width_min_mm": 12.546700900563893,
+        "opposed_width_max_mm": 12.895451564747539,
+        "opposed_width_spread_mm": 0.34875066418364575,
+        "angular_radius_residual_p95_mm": 0.12293644310279568
+      },
+      {
+        "z_mm": 0.75,
+        "section_points": 344,
+        "angular_coverage_percent": 84.72222222222221,
+        "circle_center_x_mm": 0.09804603837154958,
+        "circle_center_y_mm": 0.1287885765304335,
+        "fitted_circle_diameter_mm": 13.0186978709372,
+        "median_radius_from_fixed_axis_mm": 6.436925912086728,
+        "fixed_axis_radius_p05_mm": 6.332779445893111,
+        "fixed_axis_radius_p95_mm": 6.731913003511988,
+        "opposed_width_min_mm": 12.899884860958199,
+        "opposed_width_max_mm": 13.181319135189966,
+        "opposed_width_spread_mm": 0.28143427423176703,
+        "angular_radius_residual_p95_mm": 0.11579922890037064
+      },
+      {
+        "z_mm": 1.0,
+        "section_points": 451,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.053971792436688426,
+        "circle_center_y_mm": 0.08551328729639525,
+        "fitted_circle_diameter_mm": 13.056414651458478,
+        "median_radius_from_fixed_axis_mm": 6.514733192818538,
+        "fixed_axis_radius_p05_mm": 6.382789916935297,
+        "fixed_axis_radius_p95_mm": 6.706795044525499,
+        "opposed_width_min_mm": 12.949337306990596,
+        "opposed_width_max_mm": 13.178351651730898,
+        "opposed_width_spread_mm": 0.22901434474030147,
+        "angular_radius_residual_p95_mm": 0.10366540548789588
+      },
+      {
+        "z_mm": 1.25,
+        "section_points": 452,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.03194033356773,
+        "circle_center_y_mm": 0.0427489142716131,
+        "fitted_circle_diameter_mm": 12.98719913147222,
+        "median_radius_from_fixed_axis_mm": 6.498512635686294,
+        "fixed_axis_radius_p05_mm": 6.395497935207705,
+        "fixed_axis_radius_p95_mm": 6.580815876481847,
+        "opposed_width_min_mm": 12.873929932600682,
+        "opposed_width_max_mm": 13.093829149774177,
+        "opposed_width_spread_mm": 0.21989921717349503,
+        "angular_radius_residual_p95_mm": 0.08905366192038554
+      },
+      {
+        "z_mm": 1.5,
+        "section_points": 459,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.019101109680936937,
+        "circle_center_y_mm": 0.00791778920688694,
+        "fitted_circle_diameter_mm": 12.836953825657432,
+        "median_radius_from_fixed_axis_mm": 6.427788741261721,
+        "fixed_axis_radius_p05_mm": 6.342800404945813,
+        "fixed_axis_radius_p95_mm": 6.464106060997218,
+        "opposed_width_min_mm": 12.729279703270715,
+        "opposed_width_max_mm": 12.951018858180165,
+        "opposed_width_spread_mm": 0.22173915490945006,
+        "angular_radius_residual_p95_mm": 0.08131943086601126
+      },
+      {
+        "z_mm": 1.75,
+        "section_points": 466,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.019550936155253697,
+        "circle_center_y_mm": -0.006503647959603619,
+        "fitted_circle_diameter_mm": 12.660494240082764,
+        "median_radius_from_fixed_axis_mm": 6.331181437666916,
+        "fixed_axis_radius_p05_mm": 6.263787595164373,
+        "fixed_axis_radius_p95_mm": 6.387352887475349,
+        "opposed_width_min_mm": 12.566649571698235,
+        "opposed_width_max_mm": 12.815971748334187,
+        "opposed_width_spread_mm": 0.24932217663595146,
+        "angular_radius_residual_p95_mm": 0.07131009798640338
+      },
+      {
+        "z_mm": 2.0,
+        "section_points": 456,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.01259934614299516,
+        "circle_center_y_mm": -0.01148616922855065,
+        "fitted_circle_diameter_mm": 12.504323085674901,
+        "median_radius_from_fixed_axis_mm": 6.2515719322428716,
+        "fixed_axis_radius_p05_mm": 6.18433675375897,
+        "fixed_axis_radius_p95_mm": 6.315559742991839,
+        "opposed_width_min_mm": 12.407368275461604,
+        "opposed_width_max_mm": 12.699166746089997,
+        "opposed_width_spread_mm": 0.29179847062839315,
+        "angular_radius_residual_p95_mm": 0.07959360072140016
+      },
+      {
+        "z_mm": 2.25,
+        "section_points": 428,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.012287575324965475,
+        "circle_center_y_mm": -0.010079815567867769,
+        "fitted_circle_diameter_mm": 12.387197400704553,
+        "median_radius_from_fixed_axis_mm": 6.187920448026356,
+        "fixed_axis_radius_p05_mm": 6.124928713519767,
+        "fixed_axis_radius_p95_mm": 6.262319213022514,
+        "opposed_width_min_mm": 12.270255991920763,
+        "opposed_width_max_mm": 12.565673390186745,
+        "opposed_width_spread_mm": 0.29541739826598246,
+        "angular_radius_residual_p95_mm": 0.07705885296783956
+      },
+      {
+        "z_mm": 2.5,
+        "section_points": 450,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.0064479110196980684,
+        "circle_center_y_mm": -0.0037530292180427173,
+        "fitted_circle_diameter_mm": 12.35096513325832,
+        "median_radius_from_fixed_axis_mm": 6.171151676633238,
+        "fixed_axis_radius_p05_mm": 6.108422680141355,
+        "fixed_axis_radius_p95_mm": 6.241215253990993,
+        "opposed_width_min_mm": 12.259425163767524,
+        "opposed_width_max_mm": 12.463626166616226,
+        "opposed_width_spread_mm": 0.20420100284870202,
+        "angular_radius_residual_p95_mm": 0.07730343962418251
+      },
+      {
+        "z_mm": 2.75,
+        "section_points": 468,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.003371509101969187,
+        "circle_center_y_mm": 0.0014084958466457464,
+        "fitted_circle_diameter_mm": 12.348003959663929,
+        "median_radius_from_fixed_axis_mm": 6.177691008857321,
+        "fixed_axis_radius_p05_mm": 6.086219157785611,
+        "fixed_axis_radius_p95_mm": 6.239969689270597,
+        "opposed_width_min_mm": 12.183400972183831,
+        "opposed_width_max_mm": 12.493639127499428,
+        "opposed_width_spread_mm": 0.31023815531559684,
+        "angular_radius_residual_p95_mm": 0.09740110778829393
+      },
+      {
+        "z_mm": 3.0,
+        "section_points": 451,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.0031130792755024585,
+        "circle_center_y_mm": 0.010729877068265486,
+        "fitted_circle_diameter_mm": 12.339938717114501,
+        "median_radius_from_fixed_axis_mm": 6.172252465110947,
+        "fixed_axis_radius_p05_mm": 6.068454219043452,
+        "fixed_axis_radius_p95_mm": 6.234757075433402,
+        "opposed_width_min_mm": 12.206135047689408,
+        "opposed_width_max_mm": 12.490527587499924,
+        "opposed_width_spread_mm": 0.2843925398105167,
+        "angular_radius_residual_p95_mm": 0.10604584111979713
+      },
+      {
+        "z_mm": 3.25,
+        "section_points": 462,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.0008403444747278052,
+        "circle_center_y_mm": 0.016917182913547355,
+        "fitted_circle_diameter_mm": 12.322673474631323,
+        "median_radius_from_fixed_axis_mm": 6.161783208912095,
+        "fixed_axis_radius_p05_mm": 6.071560180240603,
+        "fixed_axis_radius_p95_mm": 6.238834257447777,
+        "opposed_width_min_mm": 12.171169377221226,
+        "opposed_width_max_mm": 12.490165788077949,
+        "opposed_width_spread_mm": 0.31899641085672314,
+        "angular_radius_residual_p95_mm": 0.1033239898473382
+      },
+      {
+        "z_mm": 3.5,
+        "section_points": 453,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.0036037288878946,
+        "circle_center_y_mm": 0.015868741249326142,
+        "fitted_circle_diameter_mm": 12.350221740228536,
+        "median_radius_from_fixed_axis_mm": 6.175041626502388,
+        "fixed_axis_radius_p05_mm": 6.0857210356678575,
+        "fixed_axis_radius_p95_mm": 6.260816410096786,
+        "opposed_width_min_mm": 12.08989970466879,
+        "opposed_width_max_mm": 12.512726382591904,
+        "opposed_width_spread_mm": 0.4228266779231138,
+        "angular_radius_residual_p95_mm": 0.09496961165185827
+      },
+      {
+        "z_mm": 3.75,
+        "section_points": 461,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.003951763884832364,
+        "circle_center_y_mm": 0.01339736900844764,
+        "fitted_circle_diameter_mm": 12.39239714764478,
+        "median_radius_from_fixed_axis_mm": 6.199111613213036,
+        "fixed_axis_radius_p05_mm": 6.107546604295288,
+        "fixed_axis_radius_p95_mm": 6.274992099484613,
+        "opposed_width_min_mm": 12.161418542022984,
+        "opposed_width_max_mm": 12.549391523138192,
+        "opposed_width_spread_mm": 0.38797298111520817,
+        "angular_radius_residual_p95_mm": 0.1031039552230039
+      },
+      {
+        "z_mm": 4.0,
+        "section_points": 468,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.004756475584042079,
+        "circle_center_y_mm": 0.016614077509901667,
+        "fitted_circle_diameter_mm": 12.425326285618736,
+        "median_radius_from_fixed_axis_mm": 6.217199546834987,
+        "fixed_axis_radius_p05_mm": 6.125152593245131,
+        "fixed_axis_radius_p95_mm": 6.298492137581245,
+        "opposed_width_min_mm": 12.268069818097626,
+        "opposed_width_max_mm": 12.596574006394825,
+        "opposed_width_spread_mm": 0.32850418829719885,
+        "angular_radius_residual_p95_mm": 0.09837185753821354
+      },
+      {
+        "z_mm": 4.25,
+        "section_points": 473,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.006594719888693112,
+        "circle_center_y_mm": 0.017262290378837836,
+        "fitted_circle_diameter_mm": 12.454624808740578,
+        "median_radius_from_fixed_axis_mm": 6.22825740545386,
+        "fixed_axis_radius_p05_mm": 6.159997247832064,
+        "fixed_axis_radius_p95_mm": 6.308791739553483,
+        "opposed_width_min_mm": 12.328473541920221,
+        "opposed_width_max_mm": 12.618983016798545,
+        "opposed_width_spread_mm": 0.29050947487832346,
+        "angular_radius_residual_p95_mm": 0.0839775977098518
+      },
+      {
+        "z_mm": 4.5,
+        "section_points": 480,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.005494850556404712,
+        "circle_center_y_mm": 0.01372009817788997,
+        "fitted_circle_diameter_mm": 12.476793159635982,
+        "median_radius_from_fixed_axis_mm": 6.238251265443974,
+        "fixed_axis_radius_p05_mm": 6.173843708638439,
+        "fixed_axis_radius_p95_mm": 6.305141094763366,
+        "opposed_width_min_mm": 12.327359327747288,
+        "opposed_width_max_mm": 12.622830590874957,
+        "opposed_width_spread_mm": 0.29547126312766814,
+        "angular_radius_residual_p95_mm": 0.08410819521452116
+      },
+      {
+        "z_mm": 4.75,
+        "section_points": 486,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.006304159655115176,
+        "circle_center_y_mm": 0.010559610154607628,
+        "fitted_circle_diameter_mm": 12.46855644812165,
+        "median_radius_from_fixed_axis_mm": 6.236223406582464,
+        "fixed_axis_radius_p05_mm": 6.1495598337957045,
+        "fixed_axis_radius_p95_mm": 6.287144406690325,
+        "opposed_width_min_mm": 12.312336729739247,
+        "opposed_width_max_mm": 12.558411982957509,
+        "opposed_width_spread_mm": 0.24607525321826174,
+        "angular_radius_residual_p95_mm": 0.08361820886433487
+      },
+      {
+        "z_mm": 5.0,
+        "section_points": 486,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.008158679406651744,
+        "circle_center_y_mm": 0.009829658306996215,
+        "fitted_circle_diameter_mm": 12.458182835841358,
+        "median_radius_from_fixed_axis_mm": 6.228097132022522,
+        "fixed_axis_radius_p05_mm": 6.160079867284039,
+        "fixed_axis_radius_p95_mm": 6.301698466317493,
+        "opposed_width_min_mm": 12.35567316818032,
+        "opposed_width_max_mm": 12.577023618609783,
+        "opposed_width_spread_mm": 0.2213504504294619,
+        "angular_radius_residual_p95_mm": 0.08749608602601688
+      },
+      {
+        "z_mm": 5.25,
+        "section_points": 493,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.0012635454068342783,
+        "circle_center_y_mm": 0.010179358899037826,
+        "fitted_circle_diameter_mm": 12.450205756561713,
+        "median_radius_from_fixed_axis_mm": 6.2249324913669035,
+        "fixed_axis_radius_p05_mm": 6.158178723075305,
+        "fixed_axis_radius_p95_mm": 6.296769735311387,
+        "opposed_width_min_mm": 12.310924317785936,
+        "opposed_width_max_mm": 12.614485596859081,
+        "opposed_width_spread_mm": 0.30356127907314523,
+        "angular_radius_residual_p95_mm": 0.08736988141929293
+      },
+      {
+        "z_mm": 5.5,
+        "section_points": 479,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.004223451114292063,
+        "circle_center_y_mm": 0.00035752016666236593,
+        "fitted_circle_diameter_mm": 12.44784128434236,
+        "median_radius_from_fixed_axis_mm": 6.223677876977039,
+        "fixed_axis_radius_p05_mm": 6.154345115015575,
+        "fixed_axis_radius_p95_mm": 6.289933258935006,
+        "opposed_width_min_mm": 12.296654476871714,
+        "opposed_width_max_mm": 12.558006437229182,
+        "opposed_width_spread_mm": 0.26135196035746766,
+        "angular_radius_residual_p95_mm": 0.0886980083155688
+      },
+      {
+        "z_mm": 5.75,
+        "section_points": 481,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.00551800478157561,
+        "circle_center_y_mm": -0.007258035282028601,
+        "fitted_circle_diameter_mm": 12.453058897410129,
+        "median_radius_from_fixed_axis_mm": 6.228131456590191,
+        "fixed_axis_radius_p05_mm": 6.158843336165486,
+        "fixed_axis_radius_p95_mm": 6.28335433568254,
+        "opposed_width_min_mm": 12.295491404357826,
+        "opposed_width_max_mm": 12.5757427680434,
+        "opposed_width_spread_mm": 0.2802513636855739,
+        "angular_radius_residual_p95_mm": 0.08347552363605867
+      },
+      {
+        "z_mm": 6.0,
+        "section_points": 487,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.004609041384702044,
+        "circle_center_y_mm": -0.005596362122829664,
+        "fitted_circle_diameter_mm": 12.460121842879659,
+        "median_radius_from_fixed_axis_mm": 6.232391624371676,
+        "fixed_axis_radius_p05_mm": 6.151585026596769,
+        "fixed_axis_radius_p95_mm": 6.287756254691759,
+        "opposed_width_min_mm": 12.314705456404432,
+        "opposed_width_max_mm": 12.574387942971946,
+        "opposed_width_spread_mm": 0.25968248656751314,
+        "angular_radius_residual_p95_mm": 0.08265585428472622
+      },
+      {
+        "z_mm": 6.25,
+        "section_points": 478,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.011559477206500177,
+        "circle_center_y_mm": -0.007364161254045126,
+        "fitted_circle_diameter_mm": 12.450945367785401,
+        "median_radius_from_fixed_axis_mm": 6.231775308128979,
+        "fixed_axis_radius_p05_mm": 6.1310750520643795,
+        "fixed_axis_radius_p95_mm": 6.299655335604712,
+        "opposed_width_min_mm": 12.29714773098323,
+        "opposed_width_max_mm": 12.553264024442724,
+        "opposed_width_spread_mm": 0.2561162934594936,
+        "angular_radius_residual_p95_mm": 0.10248390828306425
+      },
+      {
+        "z_mm": 6.5,
+        "section_points": 470,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.015143567510525266,
+        "circle_center_y_mm": -0.010487560277365875,
+        "fitted_circle_diameter_mm": 12.438684497468502,
+        "median_radius_from_fixed_axis_mm": 6.217128578871392,
+        "fixed_axis_radius_p05_mm": 6.13112536782798,
+        "fixed_axis_radius_p95_mm": 6.317892009472648,
+        "opposed_width_min_mm": 12.302245543667715,
+        "opposed_width_max_mm": 12.57562274894198,
+        "opposed_width_spread_mm": 0.2733772052742651,
+        "angular_radius_residual_p95_mm": 0.1059344696141957
+      },
+      {
+        "z_mm": 6.75,
+        "section_points": 474,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.016516830725554203,
+        "circle_center_y_mm": -0.014990477748455317,
+        "fitted_circle_diameter_mm": 12.43670907376572,
+        "median_radius_from_fixed_axis_mm": 6.215807734762036,
+        "fixed_axis_radius_p05_mm": 6.121283103286358,
+        "fixed_axis_radius_p95_mm": 6.307222737188845,
+        "opposed_width_min_mm": 12.243374441677652,
+        "opposed_width_max_mm": 12.567737228177007,
+        "opposed_width_spread_mm": 0.32436278649935524,
+        "angular_radius_residual_p95_mm": 0.10462387045979787
+      },
+      {
+        "z_mm": 7.0,
+        "section_points": 469,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.016250984843532615,
+        "circle_center_y_mm": -0.011092417606398461,
+        "fitted_circle_diameter_mm": 12.446969531547879,
+        "median_radius_from_fixed_axis_mm": 6.219932052366994,
+        "fixed_axis_radius_p05_mm": 6.126952220618661,
+        "fixed_axis_radius_p95_mm": 6.311934175340839,
+        "opposed_width_min_mm": 12.300655159139707,
+        "opposed_width_max_mm": 12.608818392678552,
+        "opposed_width_spread_mm": 0.30816323353884556,
+        "angular_radius_residual_p95_mm": 0.10091319660011691
+      },
+      {
+        "z_mm": 7.25,
+        "section_points": 466,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.01734606462583885,
+        "circle_center_y_mm": -0.0040019688718492714,
+        "fitted_circle_diameter_mm": 12.478445766841116,
+        "median_radius_from_fixed_axis_mm": 6.243443402799359,
+        "fixed_axis_radius_p05_mm": 6.139688727989177,
+        "fixed_axis_radius_p95_mm": 6.32074868839133,
+        "opposed_width_min_mm": 12.24911521733957,
+        "opposed_width_max_mm": 12.605329195467172,
+        "opposed_width_spread_mm": 0.35621397812760236,
+        "angular_radius_residual_p95_mm": 0.0965379629734327
+      },
+      {
+        "z_mm": 7.5,
+        "section_points": 462,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.013078340696082285,
+        "circle_center_y_mm": 0.022660719462859094,
+        "fitted_circle_diameter_mm": 12.480186424746677,
+        "median_radius_from_fixed_axis_mm": 6.242236287426218,
+        "fixed_axis_radius_p05_mm": 6.1496019422412225,
+        "fixed_axis_radius_p95_mm": 6.318816650988583,
+        "opposed_width_min_mm": 12.351086224308727,
+        "opposed_width_max_mm": 12.648969709807222,
+        "opposed_width_spread_mm": 0.2978834854984953,
+        "angular_radius_residual_p95_mm": 0.096106578065029
+      },
+      {
+        "z_mm": 7.75,
+        "section_points": 465,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.00252143734122922,
+        "circle_center_y_mm": 0.03214639745967182,
+        "fitted_circle_diameter_mm": 12.485601844786252,
+        "median_radius_from_fixed_axis_mm": 6.246424120697514,
+        "fixed_axis_radius_p05_mm": 6.145812744104883,
+        "fixed_axis_radius_p95_mm": 6.318916946982544,
+        "opposed_width_min_mm": 12.32268333334544,
+        "opposed_width_max_mm": 12.625047791056062,
+        "opposed_width_spread_mm": 0.30236445771062215,
+        "angular_radius_residual_p95_mm": 0.08955161899871417
+      },
+      {
+        "z_mm": 8.0,
+        "section_points": 462,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.02156672434749752,
+        "circle_center_y_mm": 0.03183553094778889,
+        "fitted_circle_diameter_mm": 12.49107987872239,
+        "median_radius_from_fixed_axis_mm": 6.234251799981969,
+        "fixed_axis_radius_p05_mm": 6.151578996110935,
+        "fixed_axis_radius_p95_mm": 6.315671521125435,
+        "opposed_width_min_mm": 12.321720934935087,
+        "opposed_width_max_mm": 12.6190370551121,
+        "opposed_width_spread_mm": 0.2973161201770136,
+        "angular_radius_residual_p95_mm": 0.07451388404596414
+      },
+      {
+        "z_mm": 8.25,
+        "section_points": 479,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.026576250306881422,
+        "circle_center_y_mm": 0.02260219061748641,
+        "fitted_circle_diameter_mm": 12.49002313241289,
+        "median_radius_from_fixed_axis_mm": 6.2431414895907515,
+        "fixed_axis_radius_p05_mm": 6.161974240524855,
+        "fixed_axis_radius_p95_mm": 6.3092694661973265,
+        "opposed_width_min_mm": 12.351843759936923,
+        "opposed_width_max_mm": 12.619814437888781,
+        "opposed_width_spread_mm": 0.26797067795185825,
+        "angular_radius_residual_p95_mm": 0.08117321270591936
+      },
+      {
+        "z_mm": 8.5,
+        "section_points": 468,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.019859696867428018,
+        "circle_center_y_mm": 0.019180935034115765,
+        "fitted_circle_diameter_mm": 12.487298218392223,
+        "median_radius_from_fixed_axis_mm": 6.241148442719431,
+        "fixed_axis_radius_p05_mm": 6.178883842338325,
+        "fixed_axis_radius_p95_mm": 6.311353450820859,
+        "opposed_width_min_mm": 12.362491670212158,
+        "opposed_width_max_mm": 12.622708971964897,
+        "opposed_width_spread_mm": 0.26021730175273916,
+        "angular_radius_residual_p95_mm": 0.08381568158981792
+      },
+      {
+        "z_mm": 8.75,
+        "section_points": 486,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.01728736826212015,
+        "circle_center_y_mm": 0.018366104531433617,
+        "fitted_circle_diameter_mm": 12.503243300303204,
+        "median_radius_from_fixed_axis_mm": 6.248489665591837,
+        "fixed_axis_radius_p05_mm": 6.185109848872453,
+        "fixed_axis_radius_p95_mm": 6.316338030455781,
+        "opposed_width_min_mm": 12.373691360096227,
+        "opposed_width_max_mm": 12.616763245245014,
+        "opposed_width_spread_mm": 0.24307188514878675,
+        "angular_radius_residual_p95_mm": 0.07392351125751022
+      },
+      {
+        "z_mm": 9.0,
+        "section_points": 493,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.01797747788162882,
+        "circle_center_y_mm": 0.011342201141883463,
+        "fitted_circle_diameter_mm": 12.520400359196342,
+        "median_radius_from_fixed_axis_mm": 6.253611043350867,
+        "fixed_axis_radius_p05_mm": 6.185709490242267,
+        "fixed_axis_radius_p95_mm": 6.325340156658134,
+        "opposed_width_min_mm": 12.436681255632408,
+        "opposed_width_max_mm": 12.625540633340119,
+        "opposed_width_spread_mm": 0.18885937770771122,
+        "angular_radius_residual_p95_mm": 0.06775673940400237
+      },
+      {
+        "z_mm": 9.25,
+        "section_points": 492,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.019090055507156308,
+        "circle_center_y_mm": 0.003224698648261565,
+        "fitted_circle_diameter_mm": 12.533934625073492,
+        "median_radius_from_fixed_axis_mm": 6.267724817963019,
+        "fixed_axis_radius_p05_mm": 6.210697775636431,
+        "fixed_axis_radius_p95_mm": 6.319287046732616,
+        "opposed_width_min_mm": 12.409225990186862,
+        "opposed_width_max_mm": 12.61494693164104,
+        "opposed_width_spread_mm": 0.20572094145417807,
+        "angular_radius_residual_p95_mm": 0.06914701320621833
+      },
+      {
+        "z_mm": 9.5,
+        "section_points": 491,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.014573494304746604,
+        "circle_center_y_mm": -0.001486829205557724,
+        "fitted_circle_diameter_mm": 12.525709931800474,
+        "median_radius_from_fixed_axis_mm": 6.258879416718349,
+        "fixed_axis_radius_p05_mm": 6.206917779945721,
+        "fixed_axis_radius_p95_mm": 6.309372647551495,
+        "opposed_width_min_mm": 12.434887722279212,
+        "opposed_width_max_mm": 12.667908487925637,
+        "opposed_width_spread_mm": 0.23302076564642427,
+        "angular_radius_residual_p95_mm": 0.06468144770993277
+      },
+      {
+        "z_mm": 9.75,
+        "section_points": 489,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.004787087436276769,
+        "circle_center_y_mm": -0.007297352589776075,
+        "fitted_circle_diameter_mm": 12.507812949678,
+        "median_radius_from_fixed_axis_mm": 6.256127144426253,
+        "fixed_axis_radius_p05_mm": 6.194794524162699,
+        "fixed_axis_radius_p95_mm": 6.307841563618023,
+        "opposed_width_min_mm": 12.391815096864764,
+        "opposed_width_max_mm": 12.609834366204893,
+        "opposed_width_spread_mm": 0.21801926934012883,
+        "angular_radius_residual_p95_mm": 0.0660148024094808
+      },
+      {
+        "z_mm": 10.0,
+        "section_points": 488,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.001888465383074869,
+        "circle_center_y_mm": -0.012878237539672816,
+        "fitted_circle_diameter_mm": 12.490418231544673,
+        "median_radius_from_fixed_axis_mm": 6.248662918112846,
+        "fixed_axis_radius_p05_mm": 6.176878078332899,
+        "fixed_axis_radius_p95_mm": 6.305809577288717,
+        "opposed_width_min_mm": 12.347922030834983,
+        "opposed_width_max_mm": 12.60692185643796,
+        "opposed_width_spread_mm": 0.2589998256029773,
+        "angular_radius_residual_p95_mm": 0.07190680174832874
+      },
+      {
+        "z_mm": 10.25,
+        "section_points": 490,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.004330895973761294,
+        "circle_center_y_mm": -0.01702192721267498,
+        "fitted_circle_diameter_mm": 12.48105845862696,
+        "median_radius_from_fixed_axis_mm": 6.244328447537156,
+        "fixed_axis_radius_p05_mm": 6.166597760625701,
+        "fixed_axis_radius_p95_mm": 6.290467632312354,
+        "opposed_width_min_mm": 12.346673710120955,
+        "opposed_width_max_mm": 12.57339234588731,
+        "opposed_width_spread_mm": 0.2267186357663551,
+        "angular_radius_residual_p95_mm": 0.0684603597037564
+      },
+      {
+        "z_mm": 10.5,
+        "section_points": 486,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.010256090521797837,
+        "circle_center_y_mm": -0.013440099595591856,
+        "fitted_circle_diameter_mm": 12.470193812678357,
+        "median_radius_from_fixed_axis_mm": 6.2375985659570805,
+        "fixed_axis_radius_p05_mm": 6.168197058103197,
+        "fixed_axis_radius_p95_mm": 6.285048241687254,
+        "opposed_width_min_mm": 12.338734246668196,
+        "opposed_width_max_mm": 12.549552244160992,
+        "opposed_width_spread_mm": 0.2108179974927964,
+        "angular_radius_residual_p95_mm": 0.06942005771964972
+      },
+      {
+        "z_mm": 10.75,
+        "section_points": 484,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.010352428964431773,
+        "circle_center_y_mm": -0.01047632280437219,
+        "fitted_circle_diameter_mm": 12.465904073976159,
+        "median_radius_from_fixed_axis_mm": 6.231098903472574,
+        "fixed_axis_radius_p05_mm": 6.170621799133288,
+        "fixed_axis_radius_p95_mm": 6.288107083170653,
+        "opposed_width_min_mm": 12.339770479964411,
+        "opposed_width_max_mm": 12.566585671134927,
+        "opposed_width_spread_mm": 0.22681519117051607,
+        "angular_radius_residual_p95_mm": 0.07053780696125651
+      },
+      {
+        "z_mm": 11.0,
+        "section_points": 495,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.013232655583557585,
+        "circle_center_y_mm": -0.007564434721947308,
+        "fitted_circle_diameter_mm": 12.467610065543695,
+        "median_radius_from_fixed_axis_mm": 6.234501053952169,
+        "fixed_axis_radius_p05_mm": 6.1815689691184925,
+        "fixed_axis_radius_p95_mm": 6.296298443303074,
+        "opposed_width_min_mm": 12.349642246764379,
+        "opposed_width_max_mm": 12.550059452260587,
+        "opposed_width_spread_mm": 0.20041720549620834,
+        "angular_radius_residual_p95_mm": 0.07722680104477733
+      },
+      {
+        "z_mm": 11.25,
+        "section_points": 508,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.013301462707008323,
+        "circle_center_y_mm": -0.00929127869089294,
+        "fitted_circle_diameter_mm": 12.47203521630917,
+        "median_radius_from_fixed_axis_mm": 6.242055109929381,
+        "fixed_axis_radius_p05_mm": 6.178471536465935,
+        "fixed_axis_radius_p95_mm": 6.286146735569034,
+        "opposed_width_min_mm": 12.364338118174462,
+        "opposed_width_max_mm": 12.568951700473905,
+        "opposed_width_spread_mm": 0.2046135822994426,
+        "angular_radius_residual_p95_mm": 0.06159001281511572
+      },
+      {
+        "z_mm": 11.5,
+        "section_points": 487,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.010104713304056703,
+        "circle_center_y_mm": -0.011384417052099232,
+        "fitted_circle_diameter_mm": 12.481188743086868,
+        "median_radius_from_fixed_axis_mm": 6.2426712343925,
+        "fixed_axis_radius_p05_mm": 6.18342347221339,
+        "fixed_axis_radius_p95_mm": 6.280604359662476,
+        "opposed_width_min_mm": 12.38717266618708,
+        "opposed_width_max_mm": 12.568992235365542,
+        "opposed_width_spread_mm": 0.18181956917846165,
+        "angular_radius_residual_p95_mm": 0.0588514475166095
+      },
+      {
+        "z_mm": 11.75,
+        "section_points": 483,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.007096685067855609,
+        "circle_center_y_mm": -0.009437788521479763,
+        "fitted_circle_diameter_mm": 12.490587733089432,
+        "median_radius_from_fixed_axis_mm": 6.2453362438448785,
+        "fixed_axis_radius_p05_mm": 6.187162633439294,
+        "fixed_axis_radius_p95_mm": 6.297146078043115,
+        "opposed_width_min_mm": 12.386090692931656,
+        "opposed_width_max_mm": 12.564882769229529,
+        "opposed_width_spread_mm": 0.17879207629787253,
+        "angular_radius_residual_p95_mm": 0.06801393351115508
+      },
+      {
+        "z_mm": 12.0,
+        "section_points": 488,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.004846153892558004,
+        "circle_center_y_mm": -0.012802408851286683,
+        "fitted_circle_diameter_mm": 12.48942372537996,
+        "median_radius_from_fixed_axis_mm": 6.2431960617462545,
+        "fixed_axis_radius_p05_mm": 6.183186031787271,
+        "fixed_axis_radius_p95_mm": 6.305028330202953,
+        "opposed_width_min_mm": 12.348548110126703,
+        "opposed_width_max_mm": 12.564621621366708,
+        "opposed_width_spread_mm": 0.21607351124000473,
+        "angular_radius_residual_p95_mm": 0.06136728008809225
+      },
+      {
+        "z_mm": 12.25,
+        "section_points": 490,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.0015313740205823564,
+        "circle_center_y_mm": -0.016309846874715112,
+        "fitted_circle_diameter_mm": 12.477608062342386,
+        "median_radius_from_fixed_axis_mm": 6.24485449506968,
+        "fixed_axis_radius_p05_mm": 6.166254839036519,
+        "fixed_axis_radius_p95_mm": 6.295949447525051,
+        "opposed_width_min_mm": 12.298523640782452,
+        "opposed_width_max_mm": 12.56267692784839,
+        "opposed_width_spread_mm": 0.26415328706593755,
+        "angular_radius_residual_p95_mm": 0.07274818149777254
+      },
+      {
+        "z_mm": 12.5,
+        "section_points": 483,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.008688383598971316,
+        "circle_center_y_mm": -0.012683137894828677,
+        "fitted_circle_diameter_mm": 12.457889081654308,
+        "median_radius_from_fixed_axis_mm": 6.23748843010022,
+        "fixed_axis_radius_p05_mm": 6.1458083531448215,
+        "fixed_axis_radius_p95_mm": 6.294457931368641,
+        "opposed_width_min_mm": 12.253976592269632,
+        "opposed_width_max_mm": 12.580904437141115,
+        "opposed_width_spread_mm": 0.3269278448714825,
+        "angular_radius_residual_p95_mm": 0.09379160874038887
+      },
+      {
+        "z_mm": 12.75,
+        "section_points": 486,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.012224290111752899,
+        "circle_center_y_mm": -0.006486645610512746,
+        "fitted_circle_diameter_mm": 12.446074428571729,
+        "median_radius_from_fixed_axis_mm": 6.220950242474181,
+        "fixed_axis_radius_p05_mm": 6.144624764109864,
+        "fixed_axis_radius_p95_mm": 6.279160842675215,
+        "opposed_width_min_mm": 12.272085056285476,
+        "opposed_width_max_mm": 12.554107686286645,
+        "opposed_width_spread_mm": 0.282022630001169,
+        "angular_radius_residual_p95_mm": 0.08317264431960289
+      },
+      {
+        "z_mm": 13.0,
+        "section_points": 484,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.01172562788384501,
+        "circle_center_y_mm": 0.002435347840300287,
+        "fitted_circle_diameter_mm": 12.481104692807516,
+        "median_radius_from_fixed_axis_mm": 6.240778184439417,
+        "fixed_axis_radius_p05_mm": 6.177732499241744,
+        "fixed_axis_radius_p95_mm": 6.305553265921621,
+        "opposed_width_min_mm": 12.333763080722107,
+        "opposed_width_max_mm": 12.587767920886606,
+        "opposed_width_spread_mm": 0.2540048401644981,
+        "angular_radius_residual_p95_mm": 0.07106509202825645
+      },
+      {
+        "z_mm": 13.25,
+        "section_points": 482,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.004236468232462169,
+        "circle_center_y_mm": 0.005238854881544008,
+        "fitted_circle_diameter_mm": 12.51483092634549,
+        "median_radius_from_fixed_axis_mm": 6.258880289662067,
+        "fixed_axis_radius_p05_mm": 6.187492646747764,
+        "fixed_axis_radius_p95_mm": 6.324113431762233,
+        "opposed_width_min_mm": 12.37436226838077,
+        "opposed_width_max_mm": 12.600951305577716,
+        "opposed_width_spread_mm": 0.22658903719694656,
+        "angular_radius_residual_p95_mm": 0.08074069756420058
+      },
+      {
+        "z_mm": 13.5,
+        "section_points": 487,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.003009027406738613,
+        "circle_center_y_mm": 0.0004781946025061386,
+        "fitted_circle_diameter_mm": 12.535017872312002,
+        "median_radius_from_fixed_axis_mm": 6.274836762980718,
+        "fixed_axis_radius_p05_mm": 6.198271089208112,
+        "fixed_axis_radius_p95_mm": 6.330457616583813,
+        "opposed_width_min_mm": 12.394625178699538,
+        "opposed_width_max_mm": 12.670011339462011,
+        "opposed_width_spread_mm": 0.2753861607624728,
+        "angular_radius_residual_p95_mm": 0.08764012843902994
+      },
+      {
+        "z_mm": 13.75,
+        "section_points": 476,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.0009574561634096807,
+        "circle_center_y_mm": -0.006414703556448044,
+        "fitted_circle_diameter_mm": 12.54818621961591,
+        "median_radius_from_fixed_axis_mm": 6.278472826477483,
+        "fixed_axis_radius_p05_mm": 6.205438726666441,
+        "fixed_axis_radius_p95_mm": 6.336569338305471,
+        "opposed_width_min_mm": 12.409163962983207,
+        "opposed_width_max_mm": 12.658564163381474,
+        "opposed_width_spread_mm": 0.2494002003982665,
+        "angular_radius_residual_p95_mm": 0.07645141728092633
+      },
+      {
+        "z_mm": 14.0,
+        "section_points": 491,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.00211874858609617,
+        "circle_center_y_mm": -0.012089366537692723,
+        "fitted_circle_diameter_mm": 12.544386440184974,
+        "median_radius_from_fixed_axis_mm": 6.273214955073323,
+        "fixed_axis_radius_p05_mm": 6.210179131383837,
+        "fixed_axis_radius_p95_mm": 6.3264499633991695,
+        "opposed_width_min_mm": 12.42601168138009,
+        "opposed_width_max_mm": 12.665611869626941,
+        "opposed_width_spread_mm": 0.23960018824685214,
+        "angular_radius_residual_p95_mm": 0.07438387600776533
+      },
+      {
+        "z_mm": 14.25,
+        "section_points": 505,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.00043770841179759996,
+        "circle_center_y_mm": -0.014054468640257181,
+        "fitted_circle_diameter_mm": 12.538834543162245,
+        "median_radius_from_fixed_axis_mm": 6.273963670624417,
+        "fixed_axis_radius_p05_mm": 6.215105310362409,
+        "fixed_axis_radius_p95_mm": 6.337955244104269,
+        "opposed_width_min_mm": 12.432262708908112,
+        "opposed_width_max_mm": 12.70025321174018,
+        "opposed_width_spread_mm": 0.2679905028320668,
+        "angular_radius_residual_p95_mm": 0.06731271295772663
+      },
+      {
+        "z_mm": 14.5,
+        "section_points": 476,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.002806479852467207,
+        "circle_center_y_mm": -0.015081609884057913,
+        "fitted_circle_diameter_mm": 12.536695576494495,
+        "median_radius_from_fixed_axis_mm": 6.27340202340549,
+        "fixed_axis_radius_p05_mm": 6.2065713722673825,
+        "fixed_axis_radius_p95_mm": 6.340851534584309,
+        "opposed_width_min_mm": 12.39992004140549,
+        "opposed_width_max_mm": 12.682799682215478,
+        "opposed_width_spread_mm": 0.2828796408099876,
+        "angular_radius_residual_p95_mm": 0.07442858688810033
+      },
+      {
+        "z_mm": 14.75,
+        "section_points": 472,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.001622530171488619,
+        "circle_center_y_mm": -0.010981195030978599,
+        "fitted_circle_diameter_mm": 12.532977560442992,
+        "median_radius_from_fixed_axis_mm": 6.269474763244358,
+        "fixed_axis_radius_p05_mm": 6.202523901656047,
+        "fixed_axis_radius_p95_mm": 6.317922711683292,
+        "opposed_width_min_mm": 12.366530906039102,
+        "opposed_width_max_mm": 12.666857372847415,
+        "opposed_width_spread_mm": 0.300326466808313,
+        "angular_radius_residual_p95_mm": 0.077591458385789
+      },
+      {
+        "z_mm": 15.0,
+        "section_points": 491,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.0071423053272548324,
+        "circle_center_y_mm": -0.00833080791326609,
+        "fitted_circle_diameter_mm": 12.531107313950278,
+        "median_radius_from_fixed_axis_mm": 6.267858362473875,
+        "fixed_axis_radius_p05_mm": 6.196546763188365,
+        "fixed_axis_radius_p95_mm": 6.33007232459117,
+        "opposed_width_min_mm": 12.342646278114149,
+        "opposed_width_max_mm": 12.646841405645231,
+        "opposed_width_spread_mm": 0.3041951275310826,
+        "angular_radius_residual_p95_mm": 0.07683872646966998
+      },
+      {
+        "z_mm": 15.25,
+        "section_points": 482,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.002453993947635439,
+        "circle_center_y_mm": -0.004825772424157422,
+        "fitted_circle_diameter_mm": 12.528207963005254,
+        "median_radius_from_fixed_axis_mm": 6.271085354406058,
+        "fixed_axis_radius_p05_mm": 6.181655850881098,
+        "fixed_axis_radius_p95_mm": 6.311255618575451,
+        "opposed_width_min_mm": 12.360814415728486,
+        "opposed_width_max_mm": 12.606546120294153,
+        "opposed_width_spread_mm": 0.24573170456566729,
+        "angular_radius_residual_p95_mm": 0.08214435197172293
+      },
+      {
+        "z_mm": 15.5,
+        "section_points": 479,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.0023436079551707747,
+        "circle_center_y_mm": -0.002489116044801832,
+        "fitted_circle_diameter_mm": 12.509649900388217,
+        "median_radius_from_fixed_axis_mm": 6.257676991925142,
+        "fixed_axis_radius_p05_mm": 6.183237169203703,
+        "fixed_axis_radius_p95_mm": 6.310800336892522,
+        "opposed_width_min_mm": 12.385060955476055,
+        "opposed_width_max_mm": 12.613372531663277,
+        "opposed_width_spread_mm": 0.2283115761872221,
+        "angular_radius_residual_p95_mm": 0.06824804519289815
+      },
+      {
+        "z_mm": 15.75,
+        "section_points": 480,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.003990319351895385,
+        "circle_center_y_mm": 0.0013718557576067737,
+        "fitted_circle_diameter_mm": 12.504920479344516,
+        "median_radius_from_fixed_axis_mm": 6.249431560823232,
+        "fixed_axis_radius_p05_mm": 6.182638898745239,
+        "fixed_axis_radius_p95_mm": 6.3054481644927165,
+        "opposed_width_min_mm": 12.369578786700263,
+        "opposed_width_max_mm": 12.598280571591372,
+        "opposed_width_spread_mm": 0.22870178489110948,
+        "angular_radius_residual_p95_mm": 0.07305861842607488
+      },
+      {
+        "z_mm": 16.0,
+        "section_points": 480,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.006822670612849731,
+        "circle_center_y_mm": 0.0028415695946174394,
+        "fitted_circle_diameter_mm": 12.506421026728228,
+        "median_radius_from_fixed_axis_mm": 6.252416896993582,
+        "fixed_axis_radius_p05_mm": 6.177341568747324,
+        "fixed_axis_radius_p95_mm": 6.310349472529731,
+        "opposed_width_min_mm": 12.401751143104697,
+        "opposed_width_max_mm": 12.680189256192584,
+        "opposed_width_spread_mm": 0.278438113087887,
+        "angular_radius_residual_p95_mm": 0.07499329219406295
+      },
+      {
+        "z_mm": 16.25,
+        "section_points": 489,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.013842471047834674,
+        "circle_center_y_mm": 0.007466623770692561,
+        "fitted_circle_diameter_mm": 12.500890380094306,
+        "median_radius_from_fixed_axis_mm": 6.249124138913731,
+        "fixed_axis_radius_p05_mm": 6.1861256231903,
+        "fixed_axis_radius_p95_mm": 6.314879012259031,
+        "opposed_width_min_mm": 12.393629301541907,
+        "opposed_width_max_mm": 12.604586151813894,
+        "opposed_width_spread_mm": 0.2109568502719874,
+        "angular_radius_residual_p95_mm": 0.06957787612124477
+      },
+      {
+        "z_mm": 16.5,
+        "section_points": 493,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.022049637168830138,
+        "circle_center_y_mm": 0.006978632659084249,
+        "fitted_circle_diameter_mm": 12.493854248951145,
+        "median_radius_from_fixed_axis_mm": 6.2499341509044495,
+        "fixed_axis_radius_p05_mm": 6.179823003601733,
+        "fixed_axis_radius_p95_mm": 6.319886619847632,
+        "opposed_width_min_mm": 12.358712191747736,
+        "opposed_width_max_mm": 12.628460517039265,
+        "opposed_width_spread_mm": 0.2697483252915287,
+        "angular_radius_residual_p95_mm": 0.08267552813760079
+      },
+      {
+        "z_mm": 16.75,
+        "section_points": 476,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.030405241800397366,
+        "circle_center_y_mm": 0.00540860112330995,
+        "fitted_circle_diameter_mm": 12.501749006261225,
+        "median_radius_from_fixed_axis_mm": 6.244826431642565,
+        "fixed_axis_radius_p05_mm": 6.165015843852884,
+        "fixed_axis_radius_p95_mm": 6.346198883420514,
+        "opposed_width_min_mm": 12.366322907600942,
+        "opposed_width_max_mm": 12.642588746612654,
+        "opposed_width_spread_mm": 0.2762658390117121,
+        "angular_radius_residual_p95_mm": 0.10181204718772505
+      },
+      {
+        "z_mm": 17.0,
+        "section_points": 478,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.02467399176214732,
+        "circle_center_y_mm": -0.0016418377627445912,
+        "fitted_circle_diameter_mm": 12.503982362415961,
+        "median_radius_from_fixed_axis_mm": 6.238945422351147,
+        "fixed_axis_radius_p05_mm": 6.168651001633704,
+        "fixed_axis_radius_p95_mm": 6.3473061436321405,
+        "opposed_width_min_mm": 12.382466133282957,
+        "opposed_width_max_mm": 12.632317982588436,
+        "opposed_width_spread_mm": 0.24985184930547888,
+        "angular_radius_residual_p95_mm": 0.09710560399841357
+      },
+      {
+        "z_mm": 17.25,
+        "section_points": 460,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.01543406190642107,
+        "circle_center_y_mm": -0.004871836338858865,
+        "fitted_circle_diameter_mm": 12.498306087819595,
+        "median_radius_from_fixed_axis_mm": 6.243751564745303,
+        "fixed_axis_radius_p05_mm": 6.159205101994526,
+        "fixed_axis_radius_p95_mm": 6.327397917738175,
+        "opposed_width_min_mm": 12.351401034400972,
+        "opposed_width_max_mm": 12.629193260652261,
+        "opposed_width_spread_mm": 0.2777922262512895,
+        "angular_radius_residual_p95_mm": 0.09630237704606551
+      },
+      {
+        "z_mm": 17.5,
+        "section_points": 468,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.001911179066865447,
+        "circle_center_y_mm": 0.003798043402559495,
+        "fitted_circle_diameter_mm": 12.486225816768508,
+        "median_radius_from_fixed_axis_mm": 6.240723850523076,
+        "fixed_axis_radius_p05_mm": 6.167461092040707,
+        "fixed_axis_radius_p95_mm": 6.322750371039476,
+        "opposed_width_min_mm": 12.35372863894355,
+        "opposed_width_max_mm": 12.674610351788925,
+        "opposed_width_spread_mm": 0.3208817128453738,
+        "angular_radius_residual_p95_mm": 0.09973688901374712
+      },
+      {
+        "z_mm": 17.75,
+        "section_points": 473,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.009613105385630928,
+        "circle_center_y_mm": 0.01037107290272134,
+        "fitted_circle_diameter_mm": 12.484498485340842,
+        "median_radius_from_fixed_axis_mm": 6.242802415510542,
+        "fixed_axis_radius_p05_mm": 6.174064790771381,
+        "fixed_axis_radius_p95_mm": 6.31495504978042,
+        "opposed_width_min_mm": 12.357831890942332,
+        "opposed_width_max_mm": 12.608412733946647,
+        "opposed_width_spread_mm": 0.2505808430043146,
+        "angular_radius_residual_p95_mm": 0.0794077970318047
+      },
+      {
+        "z_mm": 18.0,
+        "section_points": 474,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.014396098247763695,
+        "circle_center_y_mm": 0.0040420335646316734,
+        "fitted_circle_diameter_mm": 12.48752638669113,
+        "median_radius_from_fixed_axis_mm": 6.246366190785179,
+        "fixed_axis_radius_p05_mm": 6.17268919269034,
+        "fixed_axis_radius_p95_mm": 6.323108675219762,
+        "opposed_width_min_mm": 12.343095455464653,
+        "opposed_width_max_mm": 12.628809054099122,
+        "opposed_width_spread_mm": 0.28571359863446943,
+        "angular_radius_residual_p95_mm": 0.07577682510042393
+      },
+      {
+        "z_mm": 18.25,
+        "section_points": 462,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.013317900410336897,
+        "circle_center_y_mm": 0.0065278542093779495,
+        "fitted_circle_diameter_mm": 12.496223167690781,
+        "median_radius_from_fixed_axis_mm": 6.248058067753131,
+        "fixed_axis_radius_p05_mm": 6.172462816629503,
+        "fixed_axis_radius_p95_mm": 6.320213763047388,
+        "opposed_width_min_mm": 12.3586743283691,
+        "opposed_width_max_mm": 12.633128269481485,
+        "opposed_width_spread_mm": 0.27445394111238564,
+        "angular_radius_residual_p95_mm": 0.07892505454573326
+      },
+      {
+        "z_mm": 18.5,
+        "section_points": 462,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.014228358415992367,
+        "circle_center_y_mm": 0.013787061134956041,
+        "fitted_circle_diameter_mm": 12.513919858482982,
+        "median_radius_from_fixed_axis_mm": 6.2545151109660875,
+        "fixed_axis_radius_p05_mm": 6.1808670804085395,
+        "fixed_axis_radius_p95_mm": 6.3276434339045355,
+        "opposed_width_min_mm": 12.338211146393636,
+        "opposed_width_max_mm": 12.669425671270133,
+        "opposed_width_spread_mm": 0.33121452487649705,
+        "angular_radius_residual_p95_mm": 0.08011273124861487
+      },
+      {
+        "z_mm": 18.75,
+        "section_points": 465,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.013753992780485457,
+        "circle_center_y_mm": 0.011163221800514163,
+        "fitted_circle_diameter_mm": 12.530762109893715,
+        "median_radius_from_fixed_axis_mm": 6.263523298825379,
+        "fixed_axis_radius_p05_mm": 6.167081825759591,
+        "fixed_axis_radius_p95_mm": 6.3451113202071925,
+        "opposed_width_min_mm": 12.359058372221321,
+        "opposed_width_max_mm": 12.698005388845289,
+        "opposed_width_spread_mm": 0.3389470166239672,
+        "angular_radius_residual_p95_mm": 0.10866156702487278
+      },
+      {
+        "z_mm": 19.0,
+        "section_points": 449,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.018388166445042122,
+        "circle_center_y_mm": 0.004167244571257046,
+        "fitted_circle_diameter_mm": 12.533513785408513,
+        "median_radius_from_fixed_axis_mm": 6.259085486318667,
+        "fixed_axis_radius_p05_mm": 6.166379779170782,
+        "fixed_axis_radius_p95_mm": 6.345882571238207,
+        "opposed_width_min_mm": 12.360465797651278,
+        "opposed_width_max_mm": 12.699553872216029,
+        "opposed_width_spread_mm": 0.3390880745647511,
+        "angular_radius_residual_p95_mm": 0.09904363002086647
+      },
+      {
+        "z_mm": 19.25,
+        "section_points": 463,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.01679682615563747,
+        "circle_center_y_mm": 0.003964812230435806,
+        "fitted_circle_diameter_mm": 12.545564061245198,
+        "median_radius_from_fixed_axis_mm": 6.2709072164668225,
+        "fixed_axis_radius_p05_mm": 6.173023411763572,
+        "fixed_axis_radius_p95_mm": 6.357551741197359,
+        "opposed_width_min_mm": 12.399214094071539,
+        "opposed_width_max_mm": 12.711546705157893,
+        "opposed_width_spread_mm": 0.31233261108635446,
+        "angular_radius_residual_p95_mm": 0.10161714417850409
+      },
+      {
+        "z_mm": 19.5,
+        "section_points": 485,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.00414654818256151,
+        "circle_center_y_mm": 0.011221318209069126,
+        "fitted_circle_diameter_mm": 12.56243189450117,
+        "median_radius_from_fixed_axis_mm": 6.281898350808328,
+        "fixed_axis_radius_p05_mm": 6.1857787341041695,
+        "fixed_axis_radius_p95_mm": 6.361120169907764,
+        "opposed_width_min_mm": 12.385944474043153,
+        "opposed_width_max_mm": 12.739104250438844,
+        "opposed_width_spread_mm": 0.3531597763956906,
+        "angular_radius_residual_p95_mm": 0.10322861852791788
+      },
+      {
+        "z_mm": 19.75,
+        "section_points": 480,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": 0.0002777668722430248,
+        "circle_center_y_mm": 0.014954263938913132,
+        "fitted_circle_diameter_mm": 12.575566101652225,
+        "median_radius_from_fixed_axis_mm": 6.288662488155966,
+        "fixed_axis_radius_p05_mm": 6.196707446445175,
+        "fixed_axis_radius_p95_mm": 6.358785173051719,
+        "opposed_width_min_mm": 12.386388018034438,
+        "opposed_width_max_mm": 12.722432893240587,
+        "opposed_width_spread_mm": 0.3360448752061487,
+        "angular_radius_residual_p95_mm": 0.10576921468842926
+      },
+      {
+        "z_mm": 20.0,
+        "section_points": 466,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.011192140759069446,
+        "circle_center_y_mm": 0.016368363379775527,
+        "fitted_circle_diameter_mm": 12.579818356940342,
+        "median_radius_from_fixed_axis_mm": 6.296787432959174,
+        "fixed_axis_radius_p05_mm": 6.200323397326708,
+        "fixed_axis_radius_p95_mm": 6.364734573192947,
+        "opposed_width_min_mm": 12.418391895949519,
+        "opposed_width_max_mm": 12.703906271522609,
+        "opposed_width_spread_mm": 0.28551437557309,
+        "angular_radius_residual_p95_mm": 0.08537575029541294
+      },
+      {
+        "z_mm": 20.25,
+        "section_points": 477,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.012764126566484211,
+        "circle_center_y_mm": 0.012464940695443977,
+        "fitted_circle_diameter_mm": 12.576662874882329,
+        "median_radius_from_fixed_axis_mm": 6.293675570476378,
+        "fixed_axis_radius_p05_mm": 6.211584916024349,
+        "fixed_axis_radius_p95_mm": 6.368533269102426,
+        "opposed_width_min_mm": 12.399738434659671,
+        "opposed_width_max_mm": 12.697632077890383,
+        "opposed_width_spread_mm": 0.29789364323071155,
+        "angular_radius_residual_p95_mm": 0.08699733814924167
+      },
+      {
+        "z_mm": 20.5,
+        "section_points": 469,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.01614347702829991,
+        "circle_center_y_mm": 0.005062438213110735,
+        "fitted_circle_diameter_mm": 12.564205160001036,
+        "median_radius_from_fixed_axis_mm": 6.280227233087846,
+        "fixed_axis_radius_p05_mm": 6.221473201622767,
+        "fixed_axis_radius_p95_mm": 6.357430309718608,
+        "opposed_width_min_mm": 12.40834352421236,
+        "opposed_width_max_mm": 12.682684001300554,
+        "opposed_width_spread_mm": 0.2743404770881952,
+        "angular_radius_residual_p95_mm": 0.07436520110700903
+      },
+      {
+        "z_mm": 20.75,
+        "section_points": 472,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.01828769316669665,
+        "circle_center_y_mm": 0.0023815979366562075,
+        "fitted_circle_diameter_mm": 12.546608386710806,
+        "median_radius_from_fixed_axis_mm": 6.270288585145004,
+        "fixed_axis_radius_p05_mm": 6.212103208636356,
+        "fixed_axis_radius_p95_mm": 6.3445937040667815,
+        "opposed_width_min_mm": 12.400150464325328,
+        "opposed_width_max_mm": 12.703659667175897,
+        "opposed_width_spread_mm": 0.30350920285056837,
+        "angular_radius_residual_p95_mm": 0.07048907975626913
+      },
+      {
+        "z_mm": 21.0,
+        "section_points": 482,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.02189732869029626,
+        "circle_center_y_mm": 0.0072067088475541285,
+        "fitted_circle_diameter_mm": 12.548356216508973,
+        "median_radius_from_fixed_axis_mm": 6.272912892869824,
+        "fixed_axis_radius_p05_mm": 6.199638432278346,
+        "fixed_axis_radius_p95_mm": 6.35442635212071,
+        "opposed_width_min_mm": 12.394961466416886,
+        "opposed_width_max_mm": 12.679276308534416,
+        "opposed_width_spread_mm": 0.28431484211752966,
+        "angular_radius_residual_p95_mm": 0.08416320806129995
+      },
+      {
+        "z_mm": 21.25,
+        "section_points": 472,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.020516991016160797,
+        "circle_center_y_mm": 0.011598772728674758,
+        "fitted_circle_diameter_mm": 12.54838825356079,
+        "median_radius_from_fixed_axis_mm": 6.278532360909623,
+        "fixed_axis_radius_p05_mm": 6.197211937858273,
+        "fixed_axis_radius_p95_mm": 6.358046644247407,
+        "opposed_width_min_mm": 12.369485471084424,
+        "opposed_width_max_mm": 12.719472922595369,
+        "opposed_width_spread_mm": 0.3499874515109447,
+        "angular_radius_residual_p95_mm": 0.08940117744435204
+      },
+      {
+        "z_mm": 21.5,
+        "section_points": 475,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.01806279316630763,
+        "circle_center_y_mm": 0.01061755410790832,
+        "fitted_circle_diameter_mm": 12.549227788874571,
+        "median_radius_from_fixed_axis_mm": 6.275852485231992,
+        "fixed_axis_radius_p05_mm": 6.191567440581686,
+        "fixed_axis_radius_p95_mm": 6.354052542435395,
+        "opposed_width_min_mm": 12.379918423681456,
+        "opposed_width_max_mm": 12.690390019252014,
+        "opposed_width_spread_mm": 0.3104715955705579,
+        "angular_radius_residual_p95_mm": 0.09448973892637857
+      },
+      {
+        "z_mm": 21.75,
+        "section_points": 475,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.0033031829781700636,
+        "circle_center_y_mm": 0.010684035500863252,
+        "fitted_circle_diameter_mm": 12.542968038750933,
+        "median_radius_from_fixed_axis_mm": 6.264323254248094,
+        "fixed_axis_radius_p05_mm": 6.188868259207135,
+        "fixed_axis_radius_p95_mm": 6.376119153872342,
+        "opposed_width_min_mm": 12.355606269739232,
+        "opposed_width_max_mm": 12.699780445359636,
+        "opposed_width_spread_mm": 0.3441741756204042,
+        "angular_radius_residual_p95_mm": 0.11001043363110825
+      },
+      {
+        "z_mm": 22.0,
+        "section_points": 470,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.007836359334403542,
+        "circle_center_y_mm": 0.01494282874473476,
+        "fitted_circle_diameter_mm": 12.550549181804152,
+        "median_radius_from_fixed_axis_mm": 6.269034824272232,
+        "fixed_axis_radius_p05_mm": 6.187306780526565,
+        "fixed_axis_radius_p95_mm": 6.377941683226871,
+        "opposed_width_min_mm": 12.365279727916466,
+        "opposed_width_max_mm": 12.70991689154739,
+        "opposed_width_spread_mm": 0.34463716363092445,
+        "angular_radius_residual_p95_mm": 0.11293666664786588
+      },
+      {
+        "z_mm": 22.25,
+        "section_points": 478,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.019036873159721367,
+        "circle_center_y_mm": 0.02282257245166005,
+        "fitted_circle_diameter_mm": 12.556163023001421,
+        "median_radius_from_fixed_axis_mm": 6.274312131517144,
+        "fixed_axis_radius_p05_mm": 6.187231443925343,
+        "fixed_axis_radius_p95_mm": 6.382662256615057,
+        "opposed_width_min_mm": 12.374101365968944,
+        "opposed_width_max_mm": 12.739360648952633,
+        "opposed_width_spread_mm": 0.3652592829836898,
+        "angular_radius_residual_p95_mm": 0.11436449587353646
+      },
+      {
+        "z_mm": 22.5,
+        "section_points": 472,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.03217696417024533,
+        "circle_center_y_mm": 0.032479705707499765,
+        "fitted_circle_diameter_mm": 12.557471249819457,
+        "median_radius_from_fixed_axis_mm": 6.282783320757842,
+        "fixed_axis_radius_p05_mm": 6.162197948127661,
+        "fixed_axis_radius_p95_mm": 6.391493746998696,
+        "opposed_width_min_mm": 12.356897747076179,
+        "opposed_width_max_mm": 12.742791474531206,
+        "opposed_width_spread_mm": 0.38589372745502715,
+        "angular_radius_residual_p95_mm": 0.12282358532451446
+      },
+      {
+        "z_mm": 22.75,
+        "section_points": 495,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.02447550437941089,
+        "circle_center_y_mm": 0.02484439196009696,
+        "fitted_circle_diameter_mm": 12.542798302126169,
+        "median_radius_from_fixed_axis_mm": 6.270092708415008,
+        "fixed_axis_radius_p05_mm": 6.164724347557383,
+        "fixed_axis_radius_p95_mm": 6.374636467740444,
+        "opposed_width_min_mm": 12.321379277696387,
+        "opposed_width_max_mm": 12.739571814185066,
+        "opposed_width_spread_mm": 0.4181925364886787,
+        "angular_radius_residual_p95_mm": 0.11503550110018403
+      },
+      {
+        "z_mm": 23.0,
+        "section_points": 477,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.025349525736051547,
+        "circle_center_y_mm": 0.021248062872520648,
+        "fitted_circle_diameter_mm": 12.516759466503858,
+        "median_radius_from_fixed_axis_mm": 6.246868984131973,
+        "fixed_axis_radius_p05_mm": 6.1475612847186385,
+        "fixed_axis_radius_p95_mm": 6.368901931529539,
+        "opposed_width_min_mm": 12.324809353940807,
+        "opposed_width_max_mm": 12.70617986054789,
+        "opposed_width_spread_mm": 0.38137050660708205,
+        "angular_radius_residual_p95_mm": 0.11676270438043859
+      },
+      {
+        "z_mm": 23.25,
+        "section_points": 433,
+        "angular_coverage_percent": 100.0,
+        "circle_center_x_mm": -0.014554541911079646,
+        "circle_center_y_mm": 0.013218237214719633,
+        "fitted_circle_diameter_mm": 12.477813062057724,
+        "median_radius_from_fixed_axis_mm": 6.229739726780867,
+        "fixed_axis_radius_p05_mm": 6.144789102640289,
+        "fixed_axis_radius_p95_mm": 6.351800033478653,
+        "opposed_width_min_mm": 12.30847792399941,
+        "opposed_width_max_mm": 12.66614723841635,
+        "opposed_width_spread_mm": 0.35766931441694005,
+        "angular_radius_residual_p95_mm": 0.11224394315878904
+      },
+      {
+        "z_mm": 23.5,
+        "section_points": 264,
+        "angular_coverage_percent": 79.16666666666666,
+        "circle_center_x_mm": 0.045702576404755516,
+        "circle_center_y_mm": 0.008067331339783405,
+        "fitted_circle_diameter_mm": 12.356484925859261,
+        "median_radius_from_fixed_axis_mm": 6.163984095120548,
+        "fixed_axis_radius_p05_mm": 6.096911628094468,
+        "fixed_axis_radius_p95_mm": 6.33398138764929,
+        "opposed_width_min_mm": 12.227262017290467,
+        "opposed_width_max_mm": 12.659284406861328,
+        "opposed_width_spread_mm": 0.4320223895708608,
+        "angular_radius_residual_p95_mm": 0.1459547786954461
+      },
+      {
+        "z_mm": 23.75,
+        "section_points": 145,
+        "angular_coverage_percent": 48.61111111111111,
+        "circle_center_x_mm": 0.19157456485934898,
+        "circle_center_y_mm": -0.013029868826340963,
+        "fitted_circle_diameter_mm": 12.188985073266712,
+        "median_radius_from_fixed_axis_mm": 6.082708651774963,
+        "fixed_axis_radius_p05_mm": 5.966453674043008,
+        "fixed_axis_radius_p95_mm": 6.29818555370071,
+        "opposed_width_min_mm": 12.097208682831617,
+        "opposed_width_max_mm": 12.594135135161062,
+        "opposed_width_spread_mm": 0.4969264523294452,
+        "angular_radius_residual_p95_mm": 0.17161388228109264
+      },
+      {
+        "z_mm": 24.0,
+        "section_points": 127,
+        "angular_coverage_percent": 47.22222222222222,
+        "circle_center_x_mm": 0.2699244144312479,
+        "circle_center_y_mm": -0.01615227842563066,
+        "fitted_circle_diameter_mm": 11.90695639147999,
+        "median_radius_from_fixed_axis_mm": 6.001789215912969,
+        "fixed_axis_radius_p05_mm": 5.783132125205553,
+        "fixed_axis_radius_p95_mm": 6.265442041667109,
+        "opposed_width_min_mm": 11.763613088750294,
+        "opposed_width_max_mm": 12.36148665604136,
+        "opposed_width_spread_mm": 0.5978735672910656,
+        "angular_radius_residual_p95_mm": 0.14036764038030392
+      }
+    ],
+    "revolve_profile": [
+      {
+        "z_mm": 0.0,
+        "radius_mm": 6.247861730125572,
+        "diameter_mm": 12.495723460251144,
+        "angular_coverage_percent": null,
+        "basis": "completed planar cap endpoint using baseline radius"
+      },
+      {
+        "z_mm": 0.5,
+        "radius_mm": 6.286101875290386,
+        "diameter_mm": 12.572203750580773,
+        "angular_coverage_percent": 73.61111111111111,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 0.75,
+        "radius_mm": 6.436925912086728,
+        "diameter_mm": 12.873851824173457,
+        "angular_coverage_percent": 84.72222222222221,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 1.0,
+        "radius_mm": 6.514733192818538,
+        "diameter_mm": 13.029466385637075,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 1.25,
+        "radius_mm": 6.498512635686294,
+        "diameter_mm": 12.997025271372587,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 1.5,
+        "radius_mm": 6.427788741261721,
+        "diameter_mm": 12.855577482523442,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 1.75,
+        "radius_mm": 6.331181437666916,
+        "diameter_mm": 12.662362875333832,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 2.0,
+        "radius_mm": 6.2515719322428716,
+        "diameter_mm": 12.503143864485743,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 2.25,
+        "radius_mm": 6.187920448026356,
+        "diameter_mm": 12.375840896052711,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 2.5,
+        "radius_mm": 6.171151676633238,
+        "diameter_mm": 12.342303353266477,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 2.75,
+        "radius_mm": 6.177691008857321,
+        "diameter_mm": 12.355382017714643,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 3.0,
+        "radius_mm": 6.172252465110947,
+        "diameter_mm": 12.344504930221895,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 3.25,
+        "radius_mm": 6.161783208912095,
+        "diameter_mm": 12.32356641782419,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 3.5,
+        "radius_mm": 6.175041626502388,
+        "diameter_mm": 12.350083253004776,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 3.75,
+        "radius_mm": 6.199111613213036,
+        "diameter_mm": 12.398223226426072,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 4.0,
+        "radius_mm": 6.217199546834987,
+        "diameter_mm": 12.434399093669974,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 4.25,
+        "radius_mm": 6.22825740545386,
+        "diameter_mm": 12.45651481090772,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 4.5,
+        "radius_mm": 6.238251265443974,
+        "diameter_mm": 12.476502530887949,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 4.75,
+        "radius_mm": 6.236223406582464,
+        "diameter_mm": 12.472446813164929,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 5.0,
+        "radius_mm": 6.228097132022522,
+        "diameter_mm": 12.456194264045044,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 5.25,
+        "radius_mm": 6.2249324913669035,
+        "diameter_mm": 12.449864982733807,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 5.5,
+        "radius_mm": 6.223677876977039,
+        "diameter_mm": 12.447355753954078,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 5.75,
+        "radius_mm": 6.228131456590191,
+        "diameter_mm": 12.456262913180382,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 6.0,
+        "radius_mm": 6.232391624371676,
+        "diameter_mm": 12.464783248743352,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 6.25,
+        "radius_mm": 6.231775308128979,
+        "diameter_mm": 12.463550616257958,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 6.5,
+        "radius_mm": 6.217128578871392,
+        "diameter_mm": 12.434257157742785,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 6.75,
+        "radius_mm": 6.215807734762036,
+        "diameter_mm": 12.431615469524072,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 7.0,
+        "radius_mm": 6.219932052366994,
+        "diameter_mm": 12.439864104733989,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 7.25,
+        "radius_mm": 6.243443402799359,
+        "diameter_mm": 12.486886805598719,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 7.5,
+        "radius_mm": 6.242236287426218,
+        "diameter_mm": 12.484472574852436,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 7.75,
+        "radius_mm": 6.246424120697514,
+        "diameter_mm": 12.492848241395029,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 8.0,
+        "radius_mm": 6.234251799981969,
+        "diameter_mm": 12.468503599963938,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 8.25,
+        "radius_mm": 6.2431414895907515,
+        "diameter_mm": 12.486282979181503,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 8.5,
+        "radius_mm": 6.241148442719431,
+        "diameter_mm": 12.482296885438862,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 8.75,
+        "radius_mm": 6.248489665591837,
+        "diameter_mm": 12.496979331183674,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 9.0,
+        "radius_mm": 6.253611043350867,
+        "diameter_mm": 12.507222086701734,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 9.25,
+        "radius_mm": 6.267724817963019,
+        "diameter_mm": 12.535449635926039,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 9.5,
+        "radius_mm": 6.258879416718349,
+        "diameter_mm": 12.517758833436698,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 9.75,
+        "radius_mm": 6.256127144426253,
+        "diameter_mm": 12.512254288852507,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 10.0,
+        "radius_mm": 6.248662918112846,
+        "diameter_mm": 12.497325836225691,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 10.25,
+        "radius_mm": 6.244328447537156,
+        "diameter_mm": 12.488656895074312,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 10.5,
+        "radius_mm": 6.2375985659570805,
+        "diameter_mm": 12.475197131914161,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 10.75,
+        "radius_mm": 6.231098903472574,
+        "diameter_mm": 12.462197806945149,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 11.0,
+        "radius_mm": 6.234501053952169,
+        "diameter_mm": 12.469002107904338,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 11.25,
+        "radius_mm": 6.242055109929381,
+        "diameter_mm": 12.484110219858762,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 11.5,
+        "radius_mm": 6.2426712343925,
+        "diameter_mm": 12.485342468785,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 11.75,
+        "radius_mm": 6.2453362438448785,
+        "diameter_mm": 12.490672487689757,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 12.0,
+        "radius_mm": 6.2431960617462545,
+        "diameter_mm": 12.486392123492509,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 12.25,
+        "radius_mm": 6.24485449506968,
+        "diameter_mm": 12.48970899013936,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 12.5,
+        "radius_mm": 6.23748843010022,
+        "diameter_mm": 12.47497686020044,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 12.75,
+        "radius_mm": 6.220950242474181,
+        "diameter_mm": 12.441900484948363,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 13.0,
+        "radius_mm": 6.240778184439417,
+        "diameter_mm": 12.481556368878834,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 13.25,
+        "radius_mm": 6.258880289662067,
+        "diameter_mm": 12.517760579324134,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 13.5,
+        "radius_mm": 6.274836762980718,
+        "diameter_mm": 12.549673525961436,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 13.75,
+        "radius_mm": 6.278472826477483,
+        "diameter_mm": 12.556945652954965,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 14.0,
+        "radius_mm": 6.273214955073323,
+        "diameter_mm": 12.546429910146646,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 14.25,
+        "radius_mm": 6.273963670624417,
+        "diameter_mm": 12.547927341248833,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 14.5,
+        "radius_mm": 6.27340202340549,
+        "diameter_mm": 12.54680404681098,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 14.75,
+        "radius_mm": 6.269474763244358,
+        "diameter_mm": 12.538949526488716,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 15.0,
+        "radius_mm": 6.267858362473875,
+        "diameter_mm": 12.53571672494775,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 15.25,
+        "radius_mm": 6.271085354406058,
+        "diameter_mm": 12.542170708812115,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 15.5,
+        "radius_mm": 6.257676991925142,
+        "diameter_mm": 12.515353983850284,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 15.75,
+        "radius_mm": 6.249431560823232,
+        "diameter_mm": 12.498863121646464,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 16.0,
+        "radius_mm": 6.252416896993582,
+        "diameter_mm": 12.504833793987164,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 16.25,
+        "radius_mm": 6.249124138913731,
+        "diameter_mm": 12.498248277827463,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 16.5,
+        "radius_mm": 6.2499341509044495,
+        "diameter_mm": 12.499868301808899,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 16.75,
+        "radius_mm": 6.244826431642565,
+        "diameter_mm": 12.48965286328513,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 17.0,
+        "radius_mm": 6.238945422351147,
+        "diameter_mm": 12.477890844702294,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 17.25,
+        "radius_mm": 6.243751564745303,
+        "diameter_mm": 12.487503129490605,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 17.5,
+        "radius_mm": 6.240723850523076,
+        "diameter_mm": 12.481447701046152,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 17.75,
+        "radius_mm": 6.242802415510542,
+        "diameter_mm": 12.485604831021083,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 18.0,
+        "radius_mm": 6.246366190785179,
+        "diameter_mm": 12.492732381570358,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 18.25,
+        "radius_mm": 6.248058067753131,
+        "diameter_mm": 12.496116135506263,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 18.5,
+        "radius_mm": 6.2545151109660875,
+        "diameter_mm": 12.509030221932175,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 18.75,
+        "radius_mm": 6.263523298825379,
+        "diameter_mm": 12.527046597650758,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 19.0,
+        "radius_mm": 6.259085486318667,
+        "diameter_mm": 12.518170972637334,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 19.25,
+        "radius_mm": 6.2709072164668225,
+        "diameter_mm": 12.541814432933645,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 19.5,
+        "radius_mm": 6.281898350808328,
+        "diameter_mm": 12.563796701616656,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 19.75,
+        "radius_mm": 6.288662488155966,
+        "diameter_mm": 12.577324976311932,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 20.0,
+        "radius_mm": 6.296787432959174,
+        "diameter_mm": 12.593574865918349,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 20.25,
+        "radius_mm": 6.293675570476378,
+        "diameter_mm": 12.587351140952755,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 20.5,
+        "radius_mm": 6.280227233087846,
+        "diameter_mm": 12.560454466175692,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 20.75,
+        "radius_mm": 6.270288585145004,
+        "diameter_mm": 12.540577170290009,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 21.0,
+        "radius_mm": 6.272912892869824,
+        "diameter_mm": 12.545825785739648,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 21.25,
+        "radius_mm": 6.278532360909623,
+        "diameter_mm": 12.557064721819247,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 21.5,
+        "radius_mm": 6.275852485231992,
+        "diameter_mm": 12.551704970463984,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 21.75,
+        "radius_mm": 6.264323254248094,
+        "diameter_mm": 12.528646508496188,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 22.0,
+        "radius_mm": 6.269034824272232,
+        "diameter_mm": 12.538069648544464,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 22.25,
+        "radius_mm": 6.274312131517144,
+        "diameter_mm": 12.548624263034288,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 22.5,
+        "radius_mm": 6.282783320757842,
+        "diameter_mm": 12.565566641515684,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 22.75,
+        "radius_mm": 6.270092708415008,
+        "diameter_mm": 12.540185416830017,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 23.0,
+        "radius_mm": 6.246868984131973,
+        "diameter_mm": 12.493737968263947,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 23.25,
+        "radius_mm": 6.229739726780867,
+        "diameter_mm": 12.459479453561734,
+        "angular_coverage_percent": 100.0,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 23.5,
+        "radius_mm": 6.163984095120548,
+        "diameter_mm": 12.327968190241096,
+        "angular_coverage_percent": 79.16666666666666,
+        "basis": "median of observed 5-degree angular bins; partial if coverage below 85%"
+      },
+      {
+        "z_mm": 24.26005165061907,
+        "radius_mm": 6.247861730125572,
+        "diameter_mm": 12.495723460251144,
+        "angular_coverage_percent": null,
+        "basis": "completed planar cap endpoint using baseline radius"
+      }
+    ],
+    "profile_variant_topology": {
+      "watertight": true,
+      "consistent_winding": true,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "positive_volume": true,
+      "span_mm_assuming_shared_units": [
+        13.029466385637075,
+        13.029466385637075,
+        24.26005165061907
+      ]
+    },
+    "model_comparison": {
+      "ideal_cylinder": {
+        "same_sample_rms_mm": 0.08179550662569089,
+        "same_sample_p95_mm": 0.16359081591221772,
+        "lower_end_side_sample_count": 1169,
+        "lower_end_side_rms_mm": 0.20881960394201662,
+        "note": "Same 18,000 scan vertices for both candidates. One-way distances cannot validate missing geometry."
+      },
+      "measured_profile": {
+        "same_sample_rms_mm": 0.0637234976077898,
+        "same_sample_p95_mm": 0.12395294626477645,
+        "lower_end_side_sample_count": 1169,
+        "lower_end_side_rms_mm": 0.1125521821805424,
+        "note": "Same 18,000 scan vertices for both candidates. One-way distances cannot validate missing geometry."
+      }
+    },
+    "unresolved": [
+      "Physical unit scale without shared-export assumption",
+      "Cause of the measured flare",
+      "Missing cap/edge surfaces",
+      "Whether circumferential asymmetry should be retained in design"
+    ]
+  },
+  "Box": {
+    "coordinate_frame": {
+      "source_origin": [
+        -10.939428601409258,
+        9.123412028950783,
+        406.0096878919877
+      ],
+      "basis_columns": [
+        [
+          0.9877098325283057,
+          3.469446951953614e-18,
+          0.15629870993359588
+        ],
+        [
+          -0.02323876293698723,
+          -0.9888851007591694,
+          0.1468544088329865
+        ],
+        [
+          0.15456146552121217,
+          -0.1486817322219762,
+          -0.9767315372605759
+        ]
+      ],
+      "row_vector_formula": "local = (source - origin) @ basis",
+      "inverse_formula": "source = local @ basis.T + origin",
+      "max_frame_reconstruction_error": 2.1316282072803006e-14,
+      "source_vertex_bounds_local": [
+        [
+          -49.715325567465634,
+          -50.14813309658042,
+          -1.9289045617783103
+        ],
+        [
+          48.84079518965076,
+          40.771251302278436,
+          29.907407973555834
+        ]
+      ],
+      "source_vertex_span": [
+        98.55612075711639,
+        90.91938439885885,
+        31.836312535334145
+      ]
+    },
+    "body_features": [
+      {
+        "feature": "body_outside_diameter",
+        "value_mm": 59.52,
+        "basis": "fitted circular idealization"
+      },
+      {
+        "feature": "chamber_inside_diameter",
+        "value_mm": 55.22,
+        "basis": "fitted circular idealization"
+      },
+      {
+        "feature": "radial_wall_thickness",
+        "value_mm": 2.150000000000002,
+        "basis": "difference of CAD radii"
+      },
+      {
+        "feature": "cad_bottom_thickness",
+        "value_mm": 2.59,
+        "basis": "median floor estimate used by existing CAD"
+      },
+      {
+        "feature": "new_floor_consensus_center_height",
+        "value_mm": 2.2181930621888224,
+        "basis": "independent visible-surface plane fit; different from flat CAD floor"
+      },
+      {
+        "feature": "rim_center_height",
+        "value_mm": 27.1,
+        "basis": "fitted slanted rim"
+      },
+      {
+        "feature": "rim_min_height_on_cad_body",
+        "value_mm": 23.542658201971257,
+        "basis": "calculated from rim plane"
+      },
+      {
+        "feature": "rim_max_height_on_cad_body",
+        "value_mm": 30.657341798028746,
+        "basis": "calculated from rim plane"
+      }
+    ],
+    "rim_plane": {
+      "normal": [
+        0.11868937481308282,
+        7.40746171702944e-05,
+        0.9929314310764015
+      ],
+      "offset_mm": 26.90844178217048,
+      "center_height_mm": 27.1,
+      "tilt_degrees": 6.816470051631271
+    },
+    "interior_floor_consensus": {
+      "normal": [
+        0.11591547745465479,
+        -0.00245703761722621,
+        0.9932560420418326
+      ],
+      "plane_offset_mm": 2.2032336614343224,
+      "height_at_body_center_mm": 2.2181930621888224,
+      "tilt_degrees_to_outer_bottom": 6.657933171828912,
+      "consensus_faces": 57796,
+      "candidate_faces": 59952,
+      "consensus_rms_mm": 0.07272949026267529,
+      "all_candidate_abs_residual_p95_mm": 0.15807161766615066,
+      "observed_consensus_xy_bounds_mm": [
+        [
+          -22.989910474638506,
+          -22.98980805629908
+        ],
+        [
+          11.276770172289512,
+          22.943944526456544
+        ]
+      ],
+      "observed_consensus_z_range_mm": [
+        1.0000200681205829,
+        4.81887686771082
+      ],
+      "observed_y0_strip_x_range_mm": [
+        -22.989910474638506,
+        10.326313595951856
+      ],
+      "cad_planar_floor_height_mm": 2.59,
+      "basis": "Independent local consensus plane through visible interior floor. Curvature/warp and partial coverage limit interpretation."
+    },
+    "wall_trends": {
+      "outer": {
+        "radius_at_z_zero_mm": 29.759358425590474,
+        "radius_slope_mm_per_mm": -0.0027143294964203256,
+        "apparent_draft_degrees": -0.1555192424197792,
+        "all_selected_face_rms_mm": 0.31944802589726023
+      },
+      "inner": {
+        "radius_at_z_zero_mm": 27.609980039054637,
+        "radius_slope_mm_per_mm": -0.008294729738950337,
+        "apparent_draft_degrees": -0.4752421071552137,
+        "all_selected_face_rms_mm": 0.2556564161103419
+      }
+    },
+    "wall_sections": [
+      {
+        "z_mm": 3.0,
+        "outer_points": 1161,
+        "outer_median_radius_mm": 29.89602021513508,
+        "outer_radius_p05_mm": 28.982936964144155,
+        "outer_radius_p95_mm": 30.250074393599757,
+        "inner_points": 2,
+        "inner_median_radius_mm": null,
+        "inner_radius_p05_mm": null,
+        "inner_radius_p95_mm": null
+      },
+      {
+        "z_mm": 4.0,
+        "outer_points": 1161,
+        "outer_median_radius_mm": 29.941382696485686,
+        "outer_radius_p05_mm": 29.022535789213723,
+        "outer_radius_p95_mm": 30.323587350172495,
+        "inner_points": 0,
+        "inner_median_radius_mm": null,
+        "inner_radius_p05_mm": null,
+        "inner_radius_p95_mm": null
+      },
+      {
+        "z_mm": 5.0,
+        "outer_points": 1146,
+        "outer_median_radius_mm": 29.94060236066288,
+        "outer_radius_p05_mm": 29.064639025644652,
+        "outer_radius_p95_mm": 30.35318355325476,
+        "inner_points": 0,
+        "inner_median_radius_mm": null,
+        "inner_radius_p05_mm": null,
+        "inner_radius_p95_mm": null
+      },
+      {
+        "z_mm": 6.0,
+        "outer_points": 1161,
+        "outer_median_radius_mm": 29.940433426833234,
+        "outer_radius_p05_mm": 29.129322427919153,
+        "outer_radius_p95_mm": 30.3394527282905,
+        "inner_points": 0,
+        "inner_median_radius_mm": null,
+        "inner_radius_p05_mm": null,
+        "inner_radius_p95_mm": null
+      },
+      {
+        "z_mm": 7.0,
+        "outer_points": 1148,
+        "outer_median_radius_mm": 29.92430432615332,
+        "outer_radius_p05_mm": 29.15329870524116,
+        "outer_radius_p95_mm": 30.287499864119432,
+        "inner_points": 0,
+        "inner_median_radius_mm": null,
+        "inner_radius_p05_mm": null,
+        "inner_radius_p95_mm": null
+      },
+      {
+        "z_mm": 8.0,
+        "outer_points": 1137,
+        "outer_median_radius_mm": 29.797904372820135,
+        "outer_radius_p05_mm": 29.179427793559242,
+        "outer_radius_p95_mm": 30.213460110917634,
+        "inner_points": 0,
+        "inner_median_radius_mm": null,
+        "inner_radius_p05_mm": null,
+        "inner_radius_p95_mm": null
+      },
+      {
+        "z_mm": 9.0,
+        "outer_points": 1096,
+        "outer_median_radius_mm": 29.733666611030074,
+        "outer_radius_p05_mm": 29.207046212974156,
+        "outer_radius_p95_mm": 30.141902180792684,
+        "inner_points": 0,
+        "inner_median_radius_mm": null,
+        "inner_radius_p05_mm": null,
+        "inner_radius_p95_mm": null
+      },
+      {
+        "z_mm": 10.0,
+        "outer_points": 1112,
+        "outer_median_radius_mm": 29.736212932665005,
+        "outer_radius_p05_mm": 29.26210733548938,
+        "outer_radius_p95_mm": 30.071928762847968,
+        "inner_points": 0,
+        "inner_median_radius_mm": null,
+        "inner_radius_p05_mm": null,
+        "inner_radius_p95_mm": null
+      },
+      {
+        "z_mm": 11.0,
+        "outer_points": 1101,
+        "outer_median_radius_mm": 29.735281005090616,
+        "outer_radius_p05_mm": 29.44184970358892,
+        "outer_radius_p95_mm": 30.00270733116865,
+        "inner_points": 0,
+        "inner_median_radius_mm": null,
+        "inner_radius_p05_mm": null,
+        "inner_radius_p95_mm": null
+      },
+      {
+        "z_mm": 12.0,
+        "outer_points": 1151,
+        "outer_median_radius_mm": 29.72318949456632,
+        "outer_radius_p05_mm": 29.46426650375817,
+        "outer_radius_p95_mm": 29.965461848184226,
+        "inner_points": 0,
+        "inner_median_radius_mm": null,
+        "inner_radius_p05_mm": null,
+        "inner_radius_p95_mm": null
+      },
+      {
+        "z_mm": 13.0,
+        "outer_points": 1181,
+        "outer_median_radius_mm": 29.718365544880456,
+        "outer_radius_p05_mm": 29.45303151213362,
+        "outer_radius_p95_mm": 29.903390494739497,
+        "inner_points": 106,
+        "inner_median_radius_mm": 27.373479271573636,
+        "inner_radius_p05_mm": 27.284082149887105,
+        "inner_radius_p95_mm": 27.476379936921056
+      },
+      {
+        "z_mm": 14.0,
+        "outer_points": 1145,
+        "outer_median_radius_mm": 29.743478215411614,
+        "outer_radius_p05_mm": 29.41486081160367,
+        "outer_radius_p95_mm": 29.925196953405933,
+        "inner_points": 344,
+        "inner_median_radius_mm": 27.37911193131155,
+        "inner_radius_p05_mm": 27.264059874635784,
+        "inner_radius_p95_mm": 27.47336431545027
+      },
+      {
+        "z_mm": 15.0,
+        "outer_points": 1162,
+        "outer_median_radius_mm": 29.74417976329869,
+        "outer_radius_p05_mm": 29.428583481217245,
+        "outer_radius_p95_mm": 29.860146499748122,
+        "inner_points": 520,
+        "inner_median_radius_mm": 27.444361629806007,
+        "inner_radius_p05_mm": 27.29774678531211,
+        "inner_radius_p95_mm": 27.54516592996912
+      },
+      {
+        "z_mm": 16.0,
+        "outer_points": 1203,
+        "outer_median_radius_mm": 29.7469192435256,
+        "outer_radius_p05_mm": 29.40875647511793,
+        "outer_radius_p95_mm": 29.831368898657793,
+        "inner_points": 674,
+        "inner_median_radius_mm": 27.51072171356204,
+        "inner_radius_p05_mm": 27.33980367083081,
+        "inner_radius_p95_mm": 27.634402381465346
+      },
+      {
+        "z_mm": 17.0,
+        "outer_points": 1217,
+        "outer_median_radius_mm": 29.75304646923682,
+        "outer_radius_p05_mm": 29.320289841870718,
+        "outer_radius_p95_mm": 29.85249521481005,
+        "inner_points": 804,
+        "inner_median_radius_mm": 27.504797943634703,
+        "inner_radius_p05_mm": 27.346205691073287,
+        "inner_radius_p95_mm": 27.65848668479775
+      },
+      {
+        "z_mm": 18.0,
+        "outer_points": 1246,
+        "outer_median_radius_mm": 29.751273086108725,
+        "outer_radius_p05_mm": 29.288034806367577,
+        "outer_radius_p95_mm": 29.88814023125028,
+        "inner_points": 802,
+        "inner_median_radius_mm": 27.483281870584783,
+        "inner_radius_p05_mm": 27.371678279735715,
+        "inner_radius_p95_mm": 27.690698465667847
+      },
+      {
+        "z_mm": 19.0,
+        "outer_points": 1290,
+        "outer_median_radius_mm": 29.731706880074334,
+        "outer_radius_p05_mm": 29.289025606163946,
+        "outer_radius_p95_mm": 29.932764335964126,
+        "inner_points": 804,
+        "inner_median_radius_mm": 27.465363555738804,
+        "inner_radius_p05_mm": 27.32604594342949,
+        "inner_radius_p95_mm": 27.732534960757068
+      },
+      {
+        "z_mm": 20.0,
+        "outer_points": 1259,
+        "outer_median_radius_mm": 29.693371341542548,
+        "outer_radius_p05_mm": 29.290133848522505,
+        "outer_radius_p95_mm": 29.98574241145615,
+        "inner_points": 872,
+        "inner_median_radius_mm": 27.441065295589787,
+        "inner_radius_p05_mm": 27.30769782546153,
+        "inner_radius_p95_mm": 27.808211531926037
+      },
+      {
+        "z_mm": 21.0,
+        "outer_points": 1315,
+        "outer_median_radius_mm": 29.67829652353777,
+        "outer_radius_p05_mm": 29.249357008628397,
+        "outer_radius_p95_mm": 30.026528146531923,
+        "inner_points": 834,
+        "inner_median_radius_mm": 27.400180679898813,
+        "inner_radius_p05_mm": 27.273840010181782,
+        "inner_radius_p95_mm": 27.87959840041959
+      },
+      {
+        "z_mm": 22.0,
+        "outer_points": 1265,
+        "outer_median_radius_mm": 29.67097831264469,
+        "outer_radius_p05_mm": 29.20822148300717,
+        "outer_radius_p95_mm": 30.082612964610384,
+        "inner_points": 865,
+        "inner_median_radius_mm": 27.39613852146015,
+        "inner_radius_p05_mm": 27.251539731697697,
+        "inner_radius_p95_mm": 27.970375778972222
+      },
+      {
+        "z_mm": 23.0,
+        "outer_points": 1261,
+        "outer_median_radius_mm": 29.861900403366917,
+        "outer_radius_p05_mm": 29.152034385887816,
+        "outer_radius_p95_mm": 30.13283302114464,
+        "inner_points": 826,
+        "inner_median_radius_mm": 27.39161128904896,
+        "inner_radius_p05_mm": 27.20370060591024,
+        "inner_radius_p95_mm": 28.03098802465182
+      },
+      {
+        "z_mm": 24.0,
+        "outer_points": 1248,
+        "outer_median_radius_mm": 29.89047403222779,
+        "outer_radius_p05_mm": 29.17558779280021,
+        "outer_radius_p95_mm": 30.205830390951622,
+        "inner_points": 867,
+        "inner_median_radius_mm": 27.400063731732644,
+        "inner_radius_p05_mm": 27.17807432533109,
+        "inner_radius_p95_mm": 28.125615466278973
+      },
+      {
+        "z_mm": 25.0,
+        "outer_points": 1102,
+        "outer_median_radius_mm": 29.51476983441014,
+        "outer_radius_p05_mm": 29.107010271541018,
+        "outer_radius_p95_mm": 30.31111157729637,
+        "inner_points": 547,
+        "inner_median_radius_mm": 27.216400658520488,
+        "inner_radius_p05_mm": 27.135341769519375,
+        "inner_radius_p95_mm": 27.711732749333386
+      },
+      {
+        "z_mm": 26.0,
+        "outer_points": 680,
+        "outer_median_radius_mm": 29.31456871396201,
+        "outer_radius_p05_mm": 29.102069044708603,
+        "outer_radius_p95_mm": 29.629605091544043,
+        "inner_points": 446,
+        "inner_median_radius_mm": 27.160412245821224,
+        "inner_radius_p05_mm": 27.067716922728977,
+        "inner_radius_p95_mm": 27.3392694597426
+      }
+    ],
+    "ports": [
+      {
+        "port": "X+",
+        "end_x_mm": 47.92010244194342,
+        "end_y_mm": -0.9033968292067444,
+        "end_z_mm": 8.994690418435733,
+        "direction_x": 0.9988669354216277,
+        "direction_y": -0.016287335569912353,
+        "direction_z": -0.044716529622038016,
+        "inclination_degrees_to_bottom": -2.5629230293662166,
+        "centerline_length_outside_circular_body_mm": 18.186904047379702,
+        "cad_stock_length_mm": 24.0,
+        "cad_bore_cutter_depth_mm": 28.0,
+        "cad_outer_diameter_mm": 23.0,
+        "cad_bore_diameter_mm": 20.0,
+        "raw_outer_cylinder_fit_diameter_mm": 22.148525510869128,
+        "raw_inner_cylinder_fit_diameter_mm": 19.386605946922575,
+        "outer_fit_inlier_points": 4434,
+        "inner_fit_inlier_points": 2050,
+        "end_plane_fit_rms_mm": 0.06414222283772682,
+        "diameter_evidence": "Common CAD diameters are inferred. Raw partial fits are diagnostic, not certified per-port dimensions."
+      },
+      {
+        "port": "X-",
+        "end_x_mm": -48.72716380485029,
+        "end_y_mm": 1.7599487202733886,
+        "end_z_mm": 14.489368687754844,
+        "direction_x": -0.9967241957880213,
+        "direction_y": 0.01946527318844958,
+        "direction_z": 0.07849828450623252,
+        "inclination_degrees_to_bottom": 4.502252298163332,
+        "centerline_length_outside_circular_body_mm": 19.062035013613468,
+        "cad_stock_length_mm": 24.0,
+        "cad_bore_cutter_depth_mm": 28.0,
+        "cad_outer_diameter_mm": 23.0,
+        "cad_bore_diameter_mm": 20.0,
+        "raw_outer_cylinder_fit_diameter_mm": 25.999999999999996,
+        "raw_inner_cylinder_fit_diameter_mm": 20.80154313030633,
+        "outer_fit_inlier_points": 472,
+        "inner_fit_inlier_points": 5194,
+        "end_plane_fit_rms_mm": 0.06496953467236691,
+        "diameter_evidence": "Common CAD diameters are inferred. Raw partial fits are diagnostic, not certified per-port dimensions."
+      },
+      {
+        "port": "Y+",
+        "end_x_mm": 0.5931834919079235,
+        "end_y_mm": 39.95313994370516,
+        "end_z_mm": 11.650947580282885,
+        "direction_x": 0.052114201203654245,
+        "direction_y": 0.9985479851975025,
+        "direction_z": -0.013639328829275987,
+        "inclination_degrees_to_bottom": -0.7815002091680395,
+        "centerline_length_outside_circular_body_mm": 10.20802507556716,
+        "cad_stock_length_mm": 24.0,
+        "cad_bore_cutter_depth_mm": 28.0,
+        "cad_outer_diameter_mm": 23.0,
+        "cad_bore_diameter_mm": 20.0,
+        "raw_outer_cylinder_fit_diameter_mm": 23.38135244109852,
+        "raw_inner_cylinder_fit_diameter_mm": 21.599999999999998,
+        "outer_fit_inlier_points": 2385,
+        "inner_fit_inlier_points": 1894,
+        "end_plane_fit_rms_mm": 0.07654701504116528,
+        "diameter_evidence": "Common CAD diameters are inferred. Raw partial fits are diagnostic, not certified per-port dimensions."
+      },
+      {
+        "port": "Y-",
+        "end_x_mm": -0.8587536491756527,
+        "end_y_mm": -49.35513744271558,
+        "end_z_mm": 12.387991612769437,
+        "direction_x": -0.012325909890711903,
+        "direction_y": -0.9997196688720326,
+        "direction_z": 0.020215232270740957,
+        "inclination_degrees_to_bottom": 1.158326392890921,
+        "centerline_length_outside_circular_body_mm": 19.60703221733739,
+        "cad_stock_length_mm": 24.0,
+        "cad_bore_cutter_depth_mm": 28.0,
+        "cad_outer_diameter_mm": 23.0,
+        "cad_bore_diameter_mm": 20.0,
+        "raw_outer_cylinder_fit_diameter_mm": 23.010324505617362,
+        "raw_inner_cylinder_fit_diameter_mm": 20.75295036919073,
+        "outer_fit_inlier_points": 28976,
+        "inner_fit_inlier_points": 0,
+        "end_plane_fit_rms_mm": 0.06334075885683423,
+        "diameter_evidence": "Common CAD diameters are inferred. Raw partial fits are diagnostic, not certified per-port dimensions."
+      }
+    ],
+    "bosses": [
+      {
+        "boss": 1,
+        "center_x_mm": -16.9,
+        "center_y_mm": 16.41,
+        "cad_outer_diameter_mm": 9.04,
+        "cad_opening_diameter_mm": 3.7,
+        "cad_top_center_z_mm": 29.118905643565117,
+        "cad_base_z_mm": 2.59,
+        "cad_height_at_center_mm": 26.528905643565118,
+        "cad_hole_bottom_z_mm": 7.0,
+        "cad_hole_depth_at_center_mm": 22.118905643565117,
+        "observed_bore_candidate_faces": 41,
+        "observed_bore_candidate_z_min_mm": 27.05308000567992,
+        "observed_bore_candidate_z_max_mm": 27.965287769038994,
+        "opening_basis": "symmetry completion from boss 2",
+        "hole_depth_basis": "Assumed Z=7; no continuous observed bore establishes blind depth or through-hole status."
+      },
+      {
+        "boss": 2,
+        "center_x_mm": 17.75,
+        "center_y_mm": -16.55,
+        "cad_outer_diameter_mm": 9.82,
+        "cad_opening_diameter_mm": 3.7,
+        "cad_top_center_z_mm": 24.979500636075606,
+        "cad_base_z_mm": 2.59,
+        "cad_height_at_center_mm": 22.389500636075606,
+        "cad_hole_bottom_z_mm": 7.0,
+        "cad_hole_depth_at_center_mm": 17.979500636075606,
+        "observed_bore_candidate_faces": 103,
+        "observed_bore_candidate_z_min_mm": -0.03664189829747144,
+        "observed_bore_candidate_z_max_mm": 24.17536348200964,
+        "opening_basis": "fit to better-preserved upper opening",
+        "hole_depth_basis": "Assumed Z=7; no continuous observed bore establishes blind depth or through-hole status."
+      }
+    ],
+    "rim_and_body_cad_parameters": {
+      "outer_radius": 29.76,
+      "inner_radius": 27.61,
+      "bottom_thickness": 2.59,
+      "rim_center_height": 27.1,
+      "rim_plane_normal": [
+        0.11868937481308282,
+        7.40746171702944e-05,
+        0.9929314310764015
+      ],
+      "socket_outer_radius": 11.5,
+      "socket_bore_radius": 10.0,
+      "bosses": [
+        {
+          "center": [
+            -16.9,
+            16.41
+          ],
+          "outer_radius": 4.52,
+          "opening_radius": 1.85,
+          "fit_abs_residual_p95": 0.15431896983400498,
+          "blind_hole_bottom": 7.0,
+          "hole_depth_evidence": "Bottom at z=7 mm is an explicit reconstruction assumption; the scan does not resolve blind-hole depth.",
+          "opening_evidence": "Inferred by symmetry from the better preserved second boss."
+        },
+        {
+          "center": [
+            17.75,
+            -16.55
+          ],
+          "outer_radius": 4.91,
+          "opening_radius": 1.85,
+          "fit_abs_residual_p95": 0.14049612940515313,
+          "blind_hole_bottom": 7.0,
+          "hole_depth_evidence": "Bottom at z=7 mm is an explicit reconstruction assumption; the scan does not resolve blind-hole depth."
+        }
+      ],
+      "inferred_features": [
+        "Common socket OD 23.00 mm and bore 20.00 mm are inferred across missing/occluded outlets.",
+        "Blind-hole depth is not resolved by the scan; bore stops at z=7.00 mm.",
+        "The partially missing first boss bore is inferred by symmetry from the better preserved second boss.",
+        "Circular walls are idealizations; measured port axes and the slanted rim are retained."
+      ],
+      "ports": [
+        {
+          "axis": "X",
+          "sign": 1,
+          "direction": [
+            0.9988669354216277,
+            -0.016287335569912353,
+            -0.044716529622038016
+          ],
+          "end_center": [
+            47.92010244194342,
+            -0.9033968292067444,
+            8.994690418435733
+          ],
+          "start_center": [
+            23.947295991824355,
+            -0.5125007755288479,
+            10.067887129364646
+          ]
+        },
+        {
+          "axis": "X",
+          "sign": -1,
+          "direction": [
+            -0.9967241957880213,
+            0.01946527318844958,
+            0.07849828450623252
+          ],
+          "end_center": [
+            -48.72716380485029,
+            1.7599487202733886,
+            14.489368687754844
+          ],
+          "start_center": [
+            -24.80578310593778,
+            1.2927821637505987,
+            12.605409859605263
+          ]
+        },
+        {
+          "axis": "Y",
+          "sign": 1,
+          "direction": [
+            0.052114201203654245,
+            0.9985479851975025,
+            -0.013639328829275987
+          ],
+          "end_center": [
+            0.5931834919079235,
+            39.95313994370516,
+            11.650947580282885
+          ],
+          "start_center": [
+            -0.6575573369797785,
+            15.9879882989651,
+            11.978291472185509
+          ]
+        },
+        {
+          "axis": "Y",
+          "sign": -1,
+          "direction": [
+            -0.012325909890711903,
+            -0.9997196688720326,
+            0.020215232270740957
+          ],
+          "end_center": [
+            -0.8587536491756527,
+            -49.35513744271558,
+            12.387991612769437
+          ],
+          "start_center": [
+            -0.562931811798567,
+            -25.3618653897868,
+            11.902826038271654
+          ]
+        }
+      ]
+    },
+    "unresolved": [
+      "Independent physical unit scale",
+      "Original nominal dimensions and tolerances",
+      "True per-port diameters in missing regions",
+      "Blind versus through mounting holes and their depth",
+      "Original fillet/chamfer radii",
+      "Whether apparent taper, warp and uneven ports are design or distortion"
+    ]
+  }
+}
