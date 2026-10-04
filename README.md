@@ -44,11 +44,11 @@ This repository contains our reconstruction submission for the three scanned par
 
 ### CAD Models
 
-| Model | Files | Description |
-|---|---|---|
-| Boat | `Boat_reconstructed.*` (STL, PLY, OpenSCAD) | Final model |
-| Tower | `Tower_revised.*` (STL, PLY, OpenSCAD) | Final model, new loft defined by `CAD/revised_parameters.json` and `Measurements/Tower_revised_sections.csv` |
-| Box | `Box_revised.*` (STL, PLY, OpenSCAD) | Final model, new surfaces defined by `CAD/revised_parameters.json` |
+| Model | Files |
+|---|---|
+| Boat | `Boat_reconstructed.*` (STL, PLY, OpenSCAD) |
+| Tower | `Tower_revised.*` (STL, PLY, OpenSCAD) |
+| Box | `Box_revised.*` (STL, PLY, OpenSCAD) |
 ## Notes and Assumptions
 
 - All model coordinates are interpreted as millimetres under the shared-scan-unit assumption supported by Boat. STL has no embedded unit field: select mm on import.
